@@ -89,3 +89,18 @@ function acf_json_path( $path ) {
   return $path;   
 }
 add_filter('acf/settings/save_json', 'acf_json_path');
+
+/* ----------------------------------------
+LOAD ACF-JSON
+------------------------------------------- */
+
+function my_acf_json_load_point( $paths ) {
+    // Remove the original path (optional).
+    unset($paths[0]);
+
+    // Append the new path and return it.
+    $paths[] = MY_PLUGIN_DIR_PATH . '/acf-json';
+
+    return $paths;    
+}
+add_filter( 'acf/settings/load_json', 'my_acf_json_load_point' );
