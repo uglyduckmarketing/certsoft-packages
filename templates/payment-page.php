@@ -57,14 +57,14 @@
             <div class="sm:col-span-2">
               <label for="email">Email Address</label>
               <div class="mt-1">
-                <input type="email" name="email" id="email" autocomplete="email">
+                <input type="email" name="email" id="email" autocomplete="off">
               </div>
             </div>
 
             <div class="sm:col-span-2">
               <label for="password">Password</label>
               <div class="mt-1">
-                <input type="password" name="email" id="email">
+                <input type="password" name="passowrd" id="password">
               </div>
             </div>
 
