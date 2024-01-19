@@ -91,7 +91,7 @@
     <div>
       <span class="text-blue-600 text-xs mb-2 font-semibold block">Step 01.</span>
       <h2 class="block mb-4 text-2xl font-semibold tracking-tight">Pass Guarantee Offer</h2>
-      <p class="text-gray-700 text-base md:text-lg mb-12 md:mb-0">Have test anxiety or don’t want to waste valuable time? Choose our <span class="px-2 py-1 bg-blue-50 rounded-md text-base font-semibold text-blue-700">"pass guarantee"</span> and you say goodbye to your worries. The DMV only allows you 2 attempts to pass the final exam (it's ridiculous). If you fail both we'll reset your account so you can try again for <strong>FREE!</strong></p>
+      <p class="text-gray-700 text-base md:text-lg mb-12 md:mb-0">Have test anxiety or don’t want to waste valuable time? Choose our <span class="px-2 py-1 bg-blue-50 rounded-md text-base font-semibold text-blue-600">"pass guarantee"</span> and you say goodbye to your worries. The DMV only allows you 2 attempts to pass the final exam (it's ridiculous). If you fail both we'll reset your account so you can try again for <strong>FREE!</strong></p>
     </div>
   </div>
     
@@ -99,7 +99,7 @@
     <div class="-space-y-px rounded-md bg-white">
 
       <label class="relative flex cursor-pointer rounded-tl-md rounded-tr-md border p-4 focus:outline-none">
-        <input type="radio" name="passing-setting" value="yes" class="mt-1.5 h-4 w-4 shrink-0 cursor-pointer border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+        <input type="radio" name="passing-setting" value="yes" class="mt-1.5 h-4 w-4 shrink-0 cursor-pointer border-gray-300 text-blue-600 focus:ring-blue-600" />
         <span class="ml-3 block md:flex flex-col">
           <div class="block pb-2 text-lg font-semibold tracking-tight">+$4.95 - <span class="italic text-blue-600">Yes!</span> Guarantee I'll Pass <span class="ml-2 rounded-full text-xs bg-blue-600 text-white px-3 font-semibold py-1.5 absolute md:right-4 md:top-4 rec">Recommended</span></div>
           <span class="block text-sm md:text-base text-gray-600">Unlock unlimited course attempts. </span>
@@ -107,7 +107,7 @@
       </label>
 
       <label class="relative flex cursor-pointer border p-4 focus:outline-none">
-        <input type="radio" name="passing-setting" value="no" class="mt-1.5 h-4 w-4 shrink-0 cursor-pointer border-gray-300 text-indigo-600 focus:ring-blue-600" />
+        <input type="radio" name="passing-setting" value="no" class="mt-1.5 h-4 w-4 shrink-0 cursor-pointer border-gray-300 text-blue-600 focus:ring-blue-600" />
         <span class="ml-3 flex flex-col">
           <div class="block pb-2 text-lg font-semibold tracking-tight flex items-center">No Thanks</div>
           <span class="block text-sm md:text-base text-gray-600">I’ll risk it and possibly upgrade later.</span>
@@ -139,7 +139,7 @@
     <legend class="sr-only">Verification Setting</legend>
     <div class="-space-y-px rounded-md bg-white">
       <label class="relative flex cursor-pointer rounded-tl-md rounded-tr-md border p-4 focus:outline-none">
-        <input type="radio" name="cert-setting" value="yes" class="mt-1.5 h-4 w-4 shrink-0 cursor-pointer border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+        <input type="radio" name="cert-setting" value="yes" class="mt-1.5 h-4 w-4 shrink-0 cursor-pointer border-gray-300 text-blue-600 focus:ring-blue-600" />
         <span class="ml-3 flex flex-col">
 
         <div class="block text-lg font-semibold block md:flex items-center pb-2">+$3.95 - DMV Processed Verification <span class="ml-2 rounded-full text-xs bg-gray-900 text-white px-3 font-semibold py-1.5 absolute md:right-4 md:top-4 rec">Suggested</span></div>
@@ -149,7 +149,7 @@
       </label>
 
       <label class="relative flex cursor-pointer border p-4 focus:outline-none">
-        <input type="radio" name="cert-setting" value="no" class="mt-1.5 h-4 w-4 shrink-0 cursor-pointer border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+        <input type="radio" name="cert-setting" value="no" class="mt-1.5 h-4 w-4 shrink-0 cursor-pointer border-gray-300 text-blue-600 focus:ring-blue-600" />
         <span class="ml-3 flex flex-col">
           <div class="block text-lg font-semibold pb-2">No thanks, I'll monitor it on my own time</div>
           <span class="block text-sm md:text-base text-gray-600">Be sure you contact your court 3 weeks after completion. You can upgrade later should you wish.</span>
@@ -186,7 +186,7 @@
     <legend class="sr-only">Pass Setting</legend>
     <div class="-space-y-px rounded-md bg-white">
       <label class="relative flex cursor-pointer rounded-tl-md rounded-tr-md border p-4 focus:outline-none">
-        <input type="radio" name="guaranteed-setting" value="yes" class="mt-1.5 h-4 w-4 shrink-0 cursor-pointer border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+        <input type="radio" name="guaranteed-setting" value="yes" class="mt-1.5 h-4 w-4 shrink-0 cursor-pointer border-gray-300 text-blue-600 focus:ring-blue-600" />
         <span class="ml-3 flex flex-col">
           <span class="block pb-2 text-lg font-semibold md:flex items-center pb-2">+$9.95 - <span class="italic text-blue-600 mr-1 ml-1">In A Hurry!</span> Instant Processing <span class="ml-2 rounded-full text-xs bg-blue-600 text-white px-3 font-semibold py-1.5 absolute md:right-4 md:top-4 rec">Recommended</span></span>
           <span class="block text-sm md:text-base text-gray-600">We will process your certificate instantly 24/7 365 days a year.</span>
@@ -194,7 +194,7 @@
       </label>
 
       <label class="relative flex cursor-pointer border p-4 focus:outline-none">
-        <input type="radio" name="guaranteed-setting" value="no" class="mt-1.5 h-4 w-4 shrink-0 cursor-pointer border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+        <input type="radio" name="guaranteed-setting" value="no" class="mt-1.5 h-4 w-4 shrink-0 cursor-pointer border-gray-300 text-blue-600 focus:ring-blue-600" />
         <span class="ml-3 flex flex-col">
           <div class="block pb-2 text-lg font-semibold pb-2">Standard Processing - No Rush</div>
           <span class="block text-sm md:text-base text-gray-600">We will process your certificate within 3 business days after completion.</span>

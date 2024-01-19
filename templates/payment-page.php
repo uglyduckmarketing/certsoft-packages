@@ -173,7 +173,7 @@
 
             <div class="block mx-auto gap-2 h-6 items-center col-span-4 mt-4 justify-center">
               <div class="flex items-center gap-2">
-                <input id="terms" name="terms" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                <input id="terms" name="terms" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600">
                 <span class="block text-sm font-medium text-gray-700">I Accept The Terms & Conditions</span>
               </div>
             </div>
@@ -193,13 +193,13 @@
             <p class="text-base text-gray-600">Licensed by the DMV, we have helped over 1 million drivers mask their traffic ticket. We electronic filing of your certificate at the DMV & court. The course is an open-book final exam with only 6 short chapters and 25 easy questions!</p>
             <ul class="text-sm mt-6 text-gray-600 grid gap-3">
               <li class="flex gap-1.5 pr-6">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-indigo-600">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                 </svg>
                 Plus, Guaranteed Pass Policy = Take it until you pass for free. NO additional fees required. We will notify the DMV & Court of Completion INSTANTLY.
               </li>
               <li class="flex gap-1.5 pr-6">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-indigo-600">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                 </svg>
                 Plus, DMV Processed Verification = Our heroic support staff will monitor your ticket and confirm that it was successfully processed with the DMV and Court and will email you a confirmation number.</li>
@@ -213,7 +213,7 @@
           </dl>
 
           <div class="border-t border-gray-200 px-4 py-6 sm:px-6">
-            <button type="submit" class="w-full rounded-md border border-transparent bg-indigo-600 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 flex gap-4 items-center justify-center">
+            <button type="submit" class="w-full rounded-md border border-transparent bg-blue-600 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-50 flex gap-4 items-center justify-center">
               Purchase Course
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
