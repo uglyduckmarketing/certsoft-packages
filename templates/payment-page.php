@@ -57,7 +57,7 @@
             <div class="sm:col-span-2">
               <label for="email">Email Address</label>
               <div class="mt-1">
-                <input type="email" name="email" id="email" autocomplete="off">
+                <input type="email" name="email" id="email" autocomplete="email">
               </div>
             </div>
 
