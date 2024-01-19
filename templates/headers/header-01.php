@@ -3,7 +3,7 @@
     <div class="flex gap-1 md:gap-4 items-center justify-between">
       <?php if( have_rows('school_information', 'options') ) : while( have_rows('school_information', 'options') ): the_row(); ?>
       <div class="flex items-center gap-2 text-center">
-        <img class="h-8 md:h-10 grayscale" src="<?php echo get_sub_field('school_logo')['url']; ?>" />
+        <img class="h-8 md:h-10" src="<?php echo get_sub_field('school_logo')['url']; ?>" />
       </div>
       <?php endwhile; endif; ?>
       <div class="font-semibold text-sm text-gray-700 hidden md:block"><?php echo get_field('school_name'); ?></div>

@@ -147,6 +147,24 @@
                     "center_lng": "",
                     "zoom": "",
                     "height": ""
+                },
+                {
+                    "key": "field_65aac9bb45dd4",
+                    "label": "School Primary Color",
+                    "name": "school_primary_color",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "enable_opacity": 0,
+                    "return_format": "string"
                 }
             ]
         },
@@ -247,5 +265,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1705525821
+    "modified": 1705691601
 }
