@@ -208,7 +208,7 @@
           <dl class="space-y-6 border-t border-gray-200 px-4 py-6 sm:px-6">
             <div class="flex items-center justify-between">
               <dt class="text-base font-medium">Total</dt>
-              <dd class="text-base font-medium text-gray-900">$39.85</dd>
+              <dd class="text-base font-medium text-gray-900">$34.85</dd>
             </div>
           </dl>
 
