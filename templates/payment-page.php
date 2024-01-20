@@ -315,6 +315,8 @@
     padding: .85rem;
     border: 1px solid #e2e8f0;
     font-size: 16px;
+    background: white;
+    width: 100%;
   }
   ul li svg {
     min-width: 36px !important;
