@@ -331,7 +331,7 @@
   }
   input, select, textarea {
     width: 100%;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.25);
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     border-radius: 0.375rem;
     font-size: 0.875rem;
