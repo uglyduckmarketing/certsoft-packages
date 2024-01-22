@@ -313,7 +313,7 @@
   }
   input[type="text"], input[type="email"], input[type="password"], input[type="date"], textarea, select {
     padding: .85rem;
-    border: 1px solid #e2e8f0;
+    border: 1px solid rgba(0,0,0,.25);
     font-size: 16px;
     background: white;
     width: 100%;
