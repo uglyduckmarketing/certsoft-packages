@@ -2,7 +2,7 @@
 
 <?php include plugin_dir_path(__FILE__) . 'headers/header-01.php'; ?>
 
-<div class="bg-gray-50">
+<div class="bg-white">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 py-8 md:py-16">
     <h2 class="sr-only">Checkout</h2>
 
