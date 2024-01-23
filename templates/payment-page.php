@@ -413,7 +413,6 @@
 
   studentDetailsConfirmation.addEventListener('click', function(e) {
     e.preventDefault();
-    // document.getElementById('step-01').classList.add('hidden');
     document.getElementById('step-01').classList.toggle('is-editable');
     document.getElementById('step-02').classList.toggle('is-editable');
   });
@@ -467,6 +466,7 @@
     border-radius: 0.375rem;
     width: 100%;
     padding: 1.5rem 0;
+    background: #f9f9f9;
   }
   .step-heading, .step-01-container, .step-02-container {
     padding: 0 1rem !important;
@@ -488,7 +488,7 @@
     margin-bottom: 0;
   }
   .is-editable:hover {
-    background: #f9fafb;
+    background: #efefef;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   }
   .or-title {
