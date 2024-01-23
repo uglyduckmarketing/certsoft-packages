@@ -390,6 +390,12 @@
   const editButton = document.getElementById('edit-name');
   const nameOnCard = document.getElementById('name-on-card');
   const studentDetailsConfirmation = document.getElementById('student-details-confirm');
+  const emailAddress = document.getElementById('email');
+  const confirmEmailAddress = document.getElementById('confirm_email');
+
+  if(emailAddress.value !== confirmEmailAddress.value) {
+    studentDetailsConfirmation.disabled = true;
+  }
 
   lastName.addEventListener('blur', function() {
 
