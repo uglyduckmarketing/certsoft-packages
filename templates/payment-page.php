@@ -394,7 +394,7 @@
       <div class="mb-4 md:mt-10 lg:mt-0 -order-1">
 
         <div class="md:mt-4 md:rounded-lg bg-indigo-950 shadow-sm sticky md:top-6 faded">
-          <div class="p-4 md:p-10">
+          <div class="py-10 px-4 md:p-10">
             <span class="mb-4 mt-2 text-white text-xs block">Selected Package</span>
             <h2 class="text-3xl mb-4 md:pr-12 text-white">California Traffic School: Pass Guarantee, DMV Confirmation</h2>
             <p class="text-base text-gray-200">Licensed by the DMV, we have helped over 1 million drivers mask their traffic ticket. We electronic filing of your certificate at the DMV & court. The course is an open-book final exam with only 6 short chapters and 25 easy questions!</p>
