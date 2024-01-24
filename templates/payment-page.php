@@ -5,7 +5,7 @@
 <div class="bg-white">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 py-8 md:py-16">
 
-    <form class="lg:grid lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16 faded">
+    <form class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16 faded">
       
 
       <div class="form-container mt-4">
@@ -309,7 +309,7 @@
         </div>
 
 
-          <div class="mt-6 grid grid-cols-4 gap-x-4 gap-y-3">
+        <div class="mt-6 grid grid-cols-4 gap-x-4 gap-y-3">
 
           <div class="flex hidden col-span-4 items-center gap-3 mb-4" id="name-container">
             <h2 class="text-2xl" id="cc-name"></h2>
@@ -364,7 +364,7 @@
       </div>
 
       <!-- Order summary -->
-      <div class="mt-10 lg:mt-0">
+      <div class="mt-10 lg:mt-0 -order-1">
 
         <div class="mt-4 rounded-lg bg-indigo-950 shadow-sm sticky top-6 faded">
           <div class="p-6">
@@ -410,6 +410,15 @@
   const emailAddress = document.getElementById('email');
   const confirmEmailAddress = document.getElementById('confirm_email');
   const progressBar = document.getElementById('progress-bar');
+  const progressButtons = document.querySelectorAll('.progress-button');
+
+  progressButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      progressButtons.forEach(button => {
+        e.preventDefault();
+      });
+    });
+  });
 
 
   confirmEmailAddress.addEventListener('blur', function() {
