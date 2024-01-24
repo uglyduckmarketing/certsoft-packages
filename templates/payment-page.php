@@ -2,6 +2,82 @@
 
 <?php include plugin_dir_path(__FILE__) . 'headers/header-01.php'; ?>
 
+<!-- Modal -->
+
+<div class="relative z-10 hidden" id="terms-modal" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+
+  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+  <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+    <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+      <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+        <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+          <div class="sm:flex sm:items-start">
+            <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+              <h3 class="text-xl font-semibold leading-6 text-gray-900" id="modal-title">Terms &amp; Conditions</h3>
+              <div class="mt-2">
+                <div class="text-sm text-gray-500 h-60 overflow-scroll py-4">
+                  Go To www.ItsFastTrafficSchool.com Terms of Service
+                  <br /><br />
+                  I certify under penalty of perjury that I alone will study the Go To www.ItsFastTrafficSchool.com course materials, take the quizzes and final exam without any outside assistance. I understand that if it is determined that I have not completed Go To www.ItsFastTrafficSchool.com without outside assistance, make false statements or present falsified documents to the court or Go To www.ItsFastTrafficSchool.com, this may be a felony and the completion certificate will not be accepted and I will receive no refund. I have reviewed the list of licensed traffic schools and understand that Go To www.ItsFastTrafficSchool.com is a DMV Licensed traffic school for the state of California in the English Language Only. I certify that I have a valid drivers license and am eligible for traffic school.
+                  <br /><br />
+                  I agree to utilize the services of Go To www.ItsFastTrafficSchool.com in an environment fit for learning. While the information contained in Go To www.ItsFastTrafficSchool.com course has been compiled from sources believed to be reliable and correct, the publisher makes no warranty, expressed or implied, with respect to the use of any information, method, or process disclosed in this publication nor that such use may not infringe upon privately owned rights, and does not assume any liabilities or responsibilities, expressed or implied, with respect to the use of, or for damages resulting from, the use of any information, method, or process disclosed in the publication or the accuracy of the information contained herein.
+                  <br /><br />
+                  This publication, study material or guide is in English only and is not intended or designed to give legal advice on the compliance with Federal, State, or Local laws and regulations and should be noted that laws, regulations, and standards are subject to revisions, additions, or deletions, at any time.
+                  <br /><br />
+                  I agree to pay the transaction total and have verified that Go To www.ItsFastTrafficSchool.com is a DMV Licensed Traffic School #E9633. Go To www.ItsFastTrafficSchool.com will electronically process my certificate to the DMV and Court Database free of charge.
+                  <br /><br />
+                  Verification of DMV License E9633 can be verified at: https://www.dmv.ca.gov/portal/dmv/detail/portal/olinq2/tsl
+                  <br /><br />
+                  I understand and agree the DMV requires and allows all traffic schools to provide only 2 attempts to pass the final exam per account. I understand I may purchase a package that will allow unlimited attempts to take and pass the course during sign up or via upgrade at a later date. I agree to extend my best efforts to study and pass the course in its entirety. I understand my initial fee will not be refunded in the event I do not utilize the course or pass the final exam.
+                  <br /><br />
+                  I understand and agree that all upgrades purchased are optional and non-refundable. I understand CA Law states that a driver may attend traffic school only one time every 18 months.
+                  <br /><br />
+                  In the event I would like to pursue a refund I agree to notify Go To www.ItsFastTrafficSchool.com via email (help@trafficschoolassist.com) within 24 hours of payment. I agree that I will not pursue a refund through my credit card company, bank, or financial institution. Any refund provided may be subject to a nominal administration fee.
+                  <br /><br />
+                  I agree to pay any and all penalty fee(s) incurred by Go To www.ItsFastTrafficSchool.com within 15 days if I perform a chargeback for any reason with my credit card company, bank, or financial institution.
+                  <br /><br />
+                  I agree to notify Go To www.ItsFastTrafficSchool.com via email and afford 24 hours for corrections as needed if there is a technical issue. In the unlikely event Go To www.ItsFastTrafficSchool.com cannot make corrections I within 24 hours I will be refunded.
+                  <br /><br />
+                  I understand that Go To www.ItsFastTrafficSchool.com will quickly review my request and if it is determined that there was a technical problem resting solely upon Go To www.ItsFastTrafficSchool.com Web servers or Web-based applications, I will receive my refund. I understand that in the event Go To www.ItsFastTrafficSchool.com was not the fault of any errors, computers or operating systems, then I am not entitled to a refund.
+                  <br /><br />
+                  I acknowledge and understand processing of certificates occurs only on Business Days UNLESS Instant Processing is opted for. In the event I need (opt to have) my certificate processed faster I may opt for Next Day or Instant Processing at a later date for an additional fee. I understand this option fee is non-negotiable and is Premium in nature. I understand the package price will provide greater value vs. single upgrade(s).
+                  <br /><br />
+                  Certificate Submission:
+                  I understand the information I provide before my final exam must be complete and accurate. In the event my certificate is not accepted by the court or dmv for any reason I will be charged a re-processing fee of $10.00 for Go To www.ItsFastTrafficSchool.com to resubmit my certificate of completion. There will be no exceptions.
+                  <br /><br />
+                  SYSTEM REQUIREMENTS
+                  <br /><br />
+                  I understand and agree that the Go To www.ItsFastTrafficSchool.com course is an e-learning, internet-dependent, interactive learning service that requires proper communication via the Internet. I understand that Go To www.ItsFastTrafficSchool.com makes every reasonable effort to ensure the proper operation of its technology and internet communication. However, Go To www.ItsFastTrafficSchool.com cannot guarantee the proper operation of my (user, student, registrant, etc.) computer, or the Internet.
+                  <br /><br />
+                  Go To www.ItsFastTrafficSchool.com SHALL NOT BE LIABLE for my (user, student, registrant, etc.) inability to complete the course due to technical problems including, but not limited to, technical problems with the internet, internet service provider(s), and/or my own computer or email software.
+                  <br /><br />
+                  I have read and understand Go To www.ItsFastTrafficSchool.com's technical requirements and have determined that I can use this system. If I plan on taking Go To www.ItsFastTrafficSchool.com's course using a Macintosh computer with an older version operating system than OSX, or if I am using a PC computer running Windows XP or older operating system, or if I am using the Linux OS, Firefox or AOL browser, or if I am behind a corporate firewall, I understand that Go To www.ItsFastTrafficSchool.com's web-based application may not function properly and may not be supported. I understand that Go To www.ItsFastTrafficSchool.com will use EMAIL as a primary method of communicating important deadlines, receipts and tracking information about my traffic school course. I understand that I am responsible for ensuring that all Go To www.ItsFastTrafficSchool.com emails are not blocked by my email SPAM filters and that any and all emails that are returned to Go To www.ItsFastTrafficSchool.com due to misinformation or Spam filters will not be re-sent unless I make a special request to: Go To www.ItsFastTrafficSchool.com to do so.
+                  <br /><br />
+                  I agree to notify Go To www.ItsFastTrafficSchool.com during normal business hours in the event I fail the course and wait until further instruction is provided.
+                  <br /><br />
+                  Only 1 Low Price Guarantee may be applied per account and I must notify Go To www.ItsFastTrafficSchool.com via email prior to sign up to take advantage of the offer. No credit can be give AFTER payment has been made.
+                  <br /><br />
+                  I agree that all matters arising from any and all dispute(s) shall be heard by Bakersfield Superior Court, Bakersfield California.
+                  <br /><br />
+                  BY CLICKING ON "Submit Payment " BELOW, I AM CONFIRMING THAT I HAVE READ AND AGREE TO THE FOLLOWING TERMS AND CONDITIONS OF THE Go To www.ItsFastTrafficSchool.com WEBSITE AND UNDERSTAND THAT THE FOLLOWING TERMS AND CONDITIONS WILL BIND ME AND Go To www.ItsFastTrafficSchool.com TO A VALID AND ENFORCEABLE CONTRACT. I ALSO AGREE THAT UNDER PENALTY OF PERJURY YOU ARE THE INDIVIDUAL TAKING THIS COURSE AND HAVE A VALID DRIVERS LICENSE.
+                  *These terms and conditions are subject to change without notice.
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+          <button type="button" class="inline-flex w-full justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 sm:ml-3 sm:w-auto" id="terms-agree">Agree</button>
+          <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" id="cancel-button">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Form -->
+
 <div class="bg-white">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 py-8 md:py-16">
 
@@ -207,7 +283,7 @@
             <div class="flex mx-auto gap-2 h-6 items-center col-span-4 mt-4">
               <div class="flex items-center gap-2">
                 <input id="terms" name="terms" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600">
-                <span class="block text-sm font-medium text-gray-700">I Accept The <button class="text-primary">Terms & Conditions</button></span>
+                <span class="block text-sm font-medium text-gray-700">I Accept The <button class="text-primary" id="terms-trigger">Terms & Conditions</button></span>
               </div>
             </div>
 
@@ -285,14 +361,14 @@
               </div>
             </div>
 
-            <div class="col-span-3">
+            <div class="col-span-2">
               <label for="expiration-date">Expiration Date (MM/YY)</label>
               <div class="mt-1">
                 <input type="text" name="expiration-date" id="expiration-date" autocomplete="cc-exp">
               </div>
             </div>
 
-            <div>
+            <div class="col-span-2">
               <label for="cvc">CVC</label>
               <div class="mt-1">
                 <input type="text" name="cvc" id="cvc" autocomplete="csc">
@@ -364,6 +440,26 @@
   const progressButtons = document.querySelectorAll('.progress-button');
   const preogressOneButton = document.getElementById('progress-button-01');
   const progressTwoButton = document.getElementById('progress-button-02');
+  const terms = document.getElementById('terms-modal');
+  const termsTrigger = document.getElementById('terms-trigger');
+  const termsAgree = document.getElementById('terms-agree');
+  const cancelButton = document.getElementById('cancel-button');
+
+  cancelButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    terms.classList.add('hidden');
+  });
+
+  termsAgree.addEventListener('click', function(e) {
+    e.preventDefault();
+    terms.classList.add('hidden');
+    document.getElementById('terms').checked = true;
+  });
+
+  termsTrigger.addEventListener('click', function(e) {
+    e.preventDefault();
+    terms.classList.toggle('hidden');
+  });
 
   progressButtons.forEach(button => {
     button.addEventListener('click', function(e) {
