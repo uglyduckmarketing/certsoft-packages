@@ -391,7 +391,7 @@
       </div>
 
       <!-- Order summary -->
-      <div class="mt-10 lg:mt-0 -order-1">
+      <div class="mb-4 md:mt-10 lg:mt-0 -order-1">
 
         <div class="mt-4 rounded-lg bg-indigo-950 shadow-sm sticky top-6 faded">
           <div class="p-10">
