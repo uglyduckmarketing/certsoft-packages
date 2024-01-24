@@ -1700,6 +1700,11 @@ video {
     padding-right: 4rem;
   }
 
+  .md\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .md\:pr-12 {
     padding-right: 3rem;
   }
