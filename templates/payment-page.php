@@ -411,6 +411,8 @@
   const confirmEmailAddress = document.getElementById('confirm_email');
   const progressBar = document.getElementById('progress-bar');
   const progressButtons = document.querySelectorAll('.progress-button');
+  const preogressOneButton = document.getElementById('progress-button-01');
+  const progressTwoButton = document.getElementById('progress-button-02');
 
   progressButtons.forEach(button => {
     button.addEventListener('click', function(e) {
@@ -418,6 +420,22 @@
         e.preventDefault();
       });
     });
+  });
+
+  preogressOneButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('step-01').classList.toggle('is-editable');
+    document.getElementById('step-02').classList.toggle('is-editable');
+    document.getElementById('progress-button-02').classList.toggle('active-progress');
+    progressBar.style.width = '10%';
+  });
+
+  progressTwoButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('step-01').classList.toggle('is-editable');
+    document.getElementById('step-02').classList.toggle('is-editable');
+    document.getElementById('progress-button-02').classList.toggle('active-progress');
+    progressBar.style.width = '35%';
   });
 
 
