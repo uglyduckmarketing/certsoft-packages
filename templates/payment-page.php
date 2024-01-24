@@ -514,7 +514,7 @@
 
   studentDetailsConfirmation.addEventListener('click', function(e) {
     e.preventDefault();
-    window.scroll({top: 0, left: 0, behavior: 'smooth'});
+    // window.scroll({top: 0, left: 0, behavior: 'smooth'});
     document.getElementById('step-01').classList.toggle('is-editable');
     document.getElementById('step-02').classList.toggle('is-editable');
     document.getElementById('progress-button-02').classList.toggle('active-progress');
