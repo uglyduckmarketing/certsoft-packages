@@ -15,7 +15,7 @@
   width: 100%;
 }
 .payment-form ul li svg {
-  min-width: 36px !important;
+  min-width: 35px !important;
 }
 .payment-form label {
   display: block;
