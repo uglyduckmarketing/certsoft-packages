@@ -6,8 +6,25 @@
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 py-8 md:py-16">
 
     <form class="lg:grid lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16 faded">
+      
 
       <div class="form-container mt-4">
+
+        <div class="progress mb-8">
+          <div class="progress-bar bg-primary"></div>
+          <button class="progress-button active-progress" id="progress-button-01">
+            Create Account
+          </button>
+          <button class="progress-button" id="progress-button-01">
+            Payment
+          </button>
+          <button class="progress-button" id="progress-button-01">
+            Ticket Information
+          </button>
+          <button class="progress-button" id="progress-button-01">
+            Start Course
+          </button>
+        </div>
 
       <?php if( have_rows('payment_options', 'options') ) : while( have_rows('payment_options', 'options') ): the_row(); ?>
       <?php if(!get_sub_field('hide_ticket_information')) : ?>
@@ -330,6 +347,15 @@
                 <input type="text" name="cvc" id="cvc" autocomplete="csc">
               </div>
             </div>
+
+            <div class="border-t border-gray-300 col-span-4 mt-4 pt-4">
+              <button type="submit" class="w-full rounded-md border border-transparent bg-blue-600 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-50 flex gap-4 items-center justify-center bg-primary">
+                Purchase Course
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>
+              </button>
+            </div>
             
             </div>
 
@@ -340,13 +366,12 @@
       <!-- Order summary -->
       <div class="mt-10 lg:mt-0">
 
-        <div class="mt-4 rounded-lg border border-gray-300 bg-white shadow-sm sticky top-6 faded">
-          <h3 class="sr-only">Items in your cart</h3>
+        <div class="mt-4 rounded-lg bg-indigo-950 shadow-sm sticky top-6 faded">
           <div class="p-6">
-            <span class="mb-4 mt-2 text-gray-400 text-xs block">Selected Package</span>
-            <h2 class="text-3xl mb-4 md:pr-12">California Traffic School: Pass Guarantee, DMV Confirmation</h2>
-            <p class="text-base text-gray-600">Licensed by the DMV, we have helped over 1 million drivers mask their traffic ticket. We electronic filing of your certificate at the DMV & court. The course is an open-book final exam with only 6 short chapters and 25 easy questions!</p>
-            <ul class="text-sm mt-6 text-gray-600 grid gap-3">
+            <span class="mb-4 mt-2 text-white text-xs block">Selected Package</span>
+            <h2 class="text-3xl mb-4 md:pr-12 text-white">California Traffic School: Pass Guarantee, DMV Confirmation</h2>
+            <p class="text-base text-gray-200">Licensed by the DMV, we have helped over 1 million drivers mask their traffic ticket. We electronic filing of your certificate at the DMV & court. The course is an open-book final exam with only 6 short chapters and 25 easy questions!</p>
+            <ul class="text-sm mt-6 text-gray-200 grid gap-3">
               <li class="flex gap-1.5 pr-6">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600 text-primary">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -360,21 +385,13 @@
                 Plus, DMV Processed Verification = Our heroic support staff will monitor your ticket and confirm that it was successfully processed with the DMV and Court and will email you a confirmation number.</li>
             </ul>
           </div>
-          <dl class="space-y-6 border-t border-gray-200 px-4 py-6 sm:px-6">
+          <dl class="space-y-6 border-t border-white border-opacity-20 px-4 py-6 sm:px-6">
             <div class="flex items-center justify-between">
-              <dt class="text-base font-medium">Total</dt>
-              <dd class="text-base font-medium text-gray-900">$34.85</dd>
+              <dt class="text-base font-medium text-white">Total</dt>
+              <dd class="text-base font-medium text-white">$34.85</dd>
             </div>
           </dl>
 
-          <div class="border-t border-gray-200 px-4 py-6 sm:px-6">
-            <button type="submit" class="w-full rounded-md border border-transparent bg-blue-600 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-50 flex gap-4 items-center justify-center bg-primary">
-              Purchase Course
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-              </svg>
-            </button>
-          </div>
         </div>
       </div>
     </form>
@@ -393,9 +410,12 @@
   const emailAddress = document.getElementById('email');
   const confirmEmailAddress = document.getElementById('confirm_email');
 
-  if(emailAddress.value !== confirmEmailAddress.value) {
-    studentDetailsConfirmation.disabled = true;
-  }
+
+  confirmEmailAddress.addEventListener('blur', function() {
+    if(emailAddress.value === confirmEmailAddress.value) {
+      studentDetailsConfirmation.disabled = false;
+    }
+  });
 
   lastName.addEventListener('blur', function() {
 
@@ -515,7 +535,59 @@
   .is-editable #step-01-edit svg, .is-editable #step-02-edit svg {
     display: block;
   }
-  
+
+  .is-editable {
+    display: none;
+  }
+
+  .progress {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  .progress-bar {
+    height: 6px;
+    width: 10%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 100pc;
+    transition: all .3s ease;
+  }
+  .progress button {
+    transform: translateY(32px);
+    font-size: 13px;
+    font-weight: 600;
+    position: relative;
+    color: #374151;
+  }
+  .progress button::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 100pc;
+    position: absolute;
+    top: -32px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: 1px solid rgba(0,0,0,.1);
+  }
+  .progress button.active-progress::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 100pc;
+    position: absolute;
+    top: -27px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+    
 </style>
 
 <?php get_footer(); ?>

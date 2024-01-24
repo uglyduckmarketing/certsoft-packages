@@ -18,7 +18,7 @@
     .text-primary {
       color: <?php the_sub_field('school_primary_color'); ?>;
     }
-    .bg-primary {
+    .bg-primary, .progress button::after {
       background: <?php the_sub_field('school_primary_color'); ?>;
       transition: all .3s ease;
     }
