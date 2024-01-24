@@ -629,7 +629,7 @@
   }
   .progress-bar {
     height: 6px;
-    width: 11%;
+    width: 10.25%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
