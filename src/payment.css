@@ -1,0 +1,159 @@
+#header,
+#footer {
+  display: none;
+}
+.payment-form input[type="text"],
+.payment-form input[type="email"],
+.payment-form input[type="password"],
+.payment-form input[type="date"],
+.payment-form textarea,
+.payment-form select {
+  padding: 0.85rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  background: white;
+  width: 100%;
+}
+.payment-form ul li svg {
+  min-width: 36px !important;
+}
+.payment-form label {
+  display: block;
+  color: #374151;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.65rem;
+}
+.payment-form input,
+.payment-form select,
+.payment-form textarea {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.payment-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1em;
+}
+
+.is-editable {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  border-radius: 0.375rem;
+  width: 100%;
+  padding: 1.5rem 0;
+  background: #f9f9f9;
+}
+.step-heading,
+.step-01-container,
+.step-02-container {
+  padding: 0 1rem !important;
+}
+.is-editable .step-heading {
+  transition: all 0.3s ease;
+}
+.step-heading {
+  padding: 0;
+  transition: all 0.3s ease;
+}
+.payment-form #step-02 .step-02-container {
+  display: block;
+}
+.is-editable .step-02-container,
+.is-editable .step-01-container {
+  display: none !important;
+}
+.is-editable h2 {
+  margin-bottom: 0;
+}
+.is-editable:hover {
+  background: #efefef;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.or-title {
+  display: flex !important;
+}
+
+.payment-form #step-01,
+.payment-form #step-02 {
+  transition: all 0.3s ease;
+}
+
+.apple-button svg {
+  color: white !important;
+}
+
+#step-01-edit svg,
+#step-02-edit svg {
+  display: none;
+}
+.is-editable #step-01-edit svg,
+.is-editable #step-02-edit svg {
+  display: block;
+}
+
+.is-editable {
+  display: none;
+}
+
+.payment-form .progress {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+  padding: 0 1rem;
+}
+.payment-form .progress-bar {
+  height: 6px;
+  width: 10.25%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 100pc;
+  transition: all 0.3s ease;
+}
+.payment-form .progress button {
+  transform: translateY(32px);
+  font-size: 13px;
+  font-weight: 600;
+  position: relative;
+  color: #374151;
+}
+.payment-form .progress button::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 100pc;
+  position: absolute;
+  top: -32px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.payment-form .progress button.active-progress::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 100pc;
+  position: absolute;
+  top: -27px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.payment-form #terms {
+  width: auto;
+}

@@ -8,6 +8,8 @@ Version: 1.1.3
 
 function cs_enqueue() {
 	wp_enqueue_style( 'cs-tailwind', plugin_dir_url( __FILE__ ) . '/src/output.css');
+  wp_enqueue_style( 'cs-payment', plugin_dir_url( __FILE__ ) . '/src/payment.css');
+  wp_enqueue_script( 'cs-js', plugin_dir_url( __FILE__ ) . '/js/app.js', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'cs_enqueue' );
 
