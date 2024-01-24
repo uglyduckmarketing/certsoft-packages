@@ -11,17 +11,17 @@
       <div class="form-container mt-4">
 
         <div class="progress mb-8">
-          <div class="progress-bar bg-primary"></div>
+          <div class="progress-bar bg-primary" id="progress-bar"></div>
           <button class="progress-button active-progress" id="progress-button-01">
             Create Account
           </button>
-          <button class="progress-button" id="progress-button-01">
+          <button class="progress-button" id="progress-button-02">
             Payment
           </button>
-          <button class="progress-button" id="progress-button-01">
+          <button class="progress-button" id="progress-button-03">
             Ticket Information
           </button>
-          <button class="progress-button" id="progress-button-01">
+          <button class="progress-button" id="progress-button-04">
             Start Course
           </button>
         </div>
@@ -409,6 +409,7 @@
   const studentDetailsConfirmation = document.getElementById('student-details-confirm');
   const emailAddress = document.getElementById('email');
   const confirmEmailAddress = document.getElementById('confirm_email');
+  const progressBar = document.getElementById('progress-bar');
 
 
   confirmEmailAddress.addEventListener('blur', function() {
@@ -439,8 +440,12 @@
 
   studentDetailsConfirmation.addEventListener('click', function(e) {
     e.preventDefault();
+    window.scroll({top: 0, left: 0, behavior: 'smooth'});
     document.getElementById('step-01').classList.toggle('is-editable');
     document.getElementById('step-02').classList.toggle('is-editable');
+    document.getElementById('progress-button-02').classList.toggle('active-progress');
+    progressBar.style.width = '35%';
+    
   });
   
 </script>
@@ -574,7 +579,7 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.2);
   }
   .progress button.active-progress::after {
     content: '';
