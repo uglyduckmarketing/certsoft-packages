@@ -3,7 +3,7 @@
 <?php include plugin_dir_path(__FILE__) . 'headers/header-01.php'; ?>
 
 <div class="bg-white">
-  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 py-8 md:py-10">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 py-8 md:py-16">
 
     <form class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16 faded">
       
