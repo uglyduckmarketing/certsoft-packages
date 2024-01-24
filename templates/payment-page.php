@@ -474,7 +474,7 @@
     document.getElementById('step-01').classList.toggle('is-editable');
     document.getElementById('step-02').classList.toggle('is-editable');
     document.getElementById('progress-button-02').classList.toggle('active-progress');
-    progressBar.style.width = '10%';
+    progressBar.style.width = '10.25%';
   });
 
   progressTwoButton.addEventListener('click', function(e) {
