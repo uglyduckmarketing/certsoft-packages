@@ -79,7 +79,7 @@
 <!-- Form -->
 
 <div class="bg-white">
-  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 py-6 md:py-16">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 pb-6 md:py-16">
 
     <form class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16 faded">
       
