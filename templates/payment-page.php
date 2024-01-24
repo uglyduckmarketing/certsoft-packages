@@ -385,7 +385,7 @@
                 Plus, DMV Processed Verification = Our heroic support staff will monitor your ticket and confirm that it was successfully processed with the DMV and Court and will email you a confirmation number.</li>
             </ul>
           </div>
-          <dl class="space-y-6 border-t border-white border-opacity-20 px-4 py-6 sm:px-6">
+          <dl class="space-y-6 border-t border-white border-opacity-20 px-4 py-6 sm:px-6 bg-white bg-opacity-10">
             <div class="flex items-center justify-between">
               <dt class="text-base font-medium text-white">Total</dt>
               <dd class="text-base font-medium text-white">$34.85</dd>

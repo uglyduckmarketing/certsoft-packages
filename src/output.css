@@ -1183,6 +1183,10 @@ video {
   --tw-bg-opacity: 0.6;
 }
 
+.bg-opacity-10 {
+  --tw-bg-opacity: 0.1;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
