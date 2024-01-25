@@ -163,37 +163,37 @@
 
           <div class="mt-4 grid grid-cols-1 gap-y-3 sm:grid-cols-2 sm:gap-x-4">
             <div>
-              <label for="first-name">First Name</label>
+              <label for="first-name">First Name <span class="text-red-500">*</span></label>
               <div class="mt-1">
-                <input type="text" id="first-name" name="first-name" autocomplete="given-name">
+                <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
               </div>
             </div>
 
             <div>
-              <label for="last-name">Last Name</label>
+              <label for="last-name">Last Name <span class="text-red-500">*</span></label>
               <div class="mt-1">
-                <input type="text" id="last-name" name="last-name" autocomplete="family-name">
+                <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
               </div>
             </div>
 
             <div class="sm:col-span-2">
-              <label for="email">Email Address</label>
+              <label for="email">Email Address <span class="text-red-500">*</span></label>
               <div class="mt-1">
-                <input type="email" name="email" id="email" autocomplete="email">
+                <input type="email" name="email" id="email" autocomplete="email" required>
               </div>
             </div>
 
             <div class="sm:col-span-2">
-              <label for="email">Confirm Email Address</label>
+              <label for="confirm_email">Confirm Email Address <span class="text-red-500">*</span></label>
               <div class="mt-1">
-                <input type="email" name="confirm_email" id="confirm_email" autocomplete="email">
+                <input type="email" name="confirm_email" id="confirm_email" autocomplete="email" required>
               </div>
             </div>
 
             <div class="sm:col-span-2">
-              <label for="password">Password</label>
+              <label for="password">Password <span class="text-red-500">*</span></label>
               <div class="mt-1">
-                <input type="password" name="passowrd" id="password">
+                <input type="password" name="passowrd" id="password" required>
               </div>
             </div>
 
@@ -211,7 +211,7 @@
             <?php if( have_rows('payment_options', 'options') ) : while( have_rows('payment_options', 'options') ): the_row(); ?>
             <?php if(!empty(get_sub_field('ask_for_drivers_license'))) : ?>
             <div class="sm:col-span-2">
-              <label for="license">License Number</label>
+              <label for="license">License, State of Issuance</label>
               <div class="mt-1">
                 <input type="text" id="license-number" name="license-number">
               </div>
@@ -282,7 +282,7 @@
 
             <div class="flex mx-auto gap-2 h-6 items-center col-span-4 mt-4">
               <div class="flex items-center gap-2">
-                <input id="terms" name="terms" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600">
+                <input id="terms" name="terms" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" required>
                 <span class="block text-sm font-medium text-gray-700">I Accept The <button class="text-primary" id="terms-trigger">Terms & Conditions</button></span>
               </div>
             </div>
@@ -348,30 +348,30 @@
           </div>
 
           <div class="col-span-4" id="card-name">
-            <label for="name-on-card">Name On Card</label>
+            <label for="name-on-card">Name On Card <span class="text-red-500">*</span></label>
             <div class="mt-1">
               <input type="text" id="name-on-card" name="name-on-card" autocomplete="cc-name">
             </div>
           </div>
 
             <div class="col-span-4">
-              <label for="card-number">Card Number</label>
+              <label for="card-number">Card Numbe <span class="text-red-500">*</span></label>
               <div class="mt-1">
-                <input type="text" id="card-number" name="card-number" autocomplete="cc-number">
+                <input type="text" id="card-number" name="card-number" autocomplete="cc-number" required>
               </div>
             </div>
 
             <div class="col-span-2">
-              <label for="expiration-date">Expiration Date (MM/YY)</label>
+              <label for="expiration-date">Expiration Date (MM/YY) <span class="text-red-500">*</span></label>
               <div class="mt-1">
-                <input type="text" name="expiration-date" id="expiration-date" autocomplete="cc-exp">
+                <input type="text" name="expiration-date" id="expiration-date" autocomplete="cc-exp" required>
               </div>
             </div>
 
             <div class="col-span-2">
-              <label for="cvc">CVC</label>
+              <label for="cvc">CVC <span class="text-red-500">*</span></label>
               <div class="mt-1">
-                <input type="text" name="cvc" id="cvc" autocomplete="csc">
+                <input type="text" name="cvc" id="cvc" autocomplete="csc" required>
               </div>
             </div>
 
