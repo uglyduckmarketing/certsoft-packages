@@ -1,5 +1,6 @@
 const lastName = document.getElementById("last-name");
 const firstName = document.getElementById("first-name");
+const password = document.getElementById("password");
 const ccName = document.getElementById("cc-name");
 const ccInput = document.getElementById("card-name");
 const nameContainer = document.getElementById("name-container");
@@ -29,7 +30,10 @@ confirmEmailAddress.addEventListener("blur", function () {
 studentDetailsConfirmation.addEventListener("click", function (e) {
   if (
     termsCheckbox.checked &&
-    emailAddress.value === confirmEmailAddress.value
+    emailAddress.value === confirmEmailAddress.value &&
+    lastName.value &&
+    firstName.value &&
+    password.value
   ) {
     e.preventDefault();
     // window.scroll({top: 0, left: 0, behavior: 'smooth'});
@@ -39,10 +43,6 @@ studentDetailsConfirmation.addEventListener("click", function (e) {
       .getElementById("progress-button-02")
       .classList.toggle("active-progress");
     progressBar.style.width = "34.5%";
-  } else {
-    alert(
-      "Please agree to the terms and conditions and ensure your email addresses match."
-    );
   }
 });
 
