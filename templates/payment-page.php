@@ -211,14 +211,14 @@
             <?php if( have_rows('payment_options', 'options') ) : while( have_rows('payment_options', 'options') ): the_row(); ?>
             <?php if(!empty(get_sub_field('ask_for_drivers_license'))) : ?>
             <div class="sm:col-span-2">
-              <label for="license">License, State of Issuance</label>
+              <label for="license">License Number</label>
               <div class="mt-1">
                 <input type="text" id="license-number" name="license-number">
               </div>
             </div>
 
             <div class="sm:col-span-2">
-              <label for="license-state">License State</label>
+              <label for="license-state">License State of Issuance</label>
               <div class="mt-1">
                 <select id="license-state" name="license-state">
                 <option value="AL">Alabama</option>
