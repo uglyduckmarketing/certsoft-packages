@@ -22,7 +22,7 @@ const studentDetailsConfirmation = document.getElementById(
 
 confirmEmailAddress.addEventListener("blur", function () {
   if (emailAddress.value !== confirmEmailAddress.value) {
-    alert("Emails addresses Dd not match.");
+    alert("Emails addresses do not match.");
   }
 });
 
