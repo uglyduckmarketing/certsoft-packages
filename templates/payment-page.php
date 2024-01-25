@@ -355,7 +355,7 @@
           </div>
 
             <div class="col-span-4">
-              <label for="card-number">Card Numbe <span class="text-red-500">*</span></label>
+              <label for="card-number">Card Number <span class="text-red-500">*</span></label>
               <div class="mt-1">
                 <input type="text" id="card-number" name="card-number" autocomplete="cc-number" required>
               </div>
