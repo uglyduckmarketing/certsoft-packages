@@ -1,6 +1,6 @@
 <?php
 if(empty($_GET['id'])) {
-  header("Location: " . bloginfo('url') . "/signup/");
+  header("Location: " . $_SERVER['PHP_SELF'] . "/signup/");
   die();
   exit;
 }
