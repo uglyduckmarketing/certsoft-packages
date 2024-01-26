@@ -1,5 +1,14 @@
+<?php
+if(empty($_GET['id'])) {
+  header("Location: " . bloginfo('url') . "/signup/");
+  die();
+  exit;
+}
+?>
+
 <?php get_header(); ?>
 
+<?php include plugin_dir_path(__FILE__) . 'data/packages-data.php'; ?>
 <?php include plugin_dir_path(__FILE__) . 'headers/header-01.php'; ?>
 
 <!-- Modal -->
@@ -396,7 +405,7 @@
         <div class="md:mt-4 md:rounded-lg bg-indigo-950 shadow-sm sticky md:top-6 faded">
           <div class="py-10 px-4 md:p-10">
             <span class="mb-4 mt-2 text-white text-xs block">Selected Package</span>
-            <h2 class="text-3xl mb-4 md:pr-12 text-white">California Traffic School: Pass Guarantee, DMV Confirmation</h2>
+            <h2 class="text-3xl md:text-4xl mb-4 md:pr-12 text-white"><?php echo $packages[$id]['name']; ?></h2>
             <p class="text-base text-gray-200">Licensed by the DMV, we have helped over 1 million drivers mask their traffic ticket. We electronic filing of your certificate at the DMV & court. The course is an open-book final exam with only 6 short chapters and 25 easy questions!</p>
             <ul class="text-sm mt-6 text-gray-200 grid gap-3">
               <li class="flex gap-1.5 pr-6">
@@ -415,7 +424,7 @@
           <dl class="space-y-6 border-t border-white border-opacity-20 px-4 py-6 sm:px-6 bg-white bg-opacity-10">
             <div class="flex items-center justify-between">
               <dt class="text-base font-medium text-white">Total</dt>
-              <dd class="text-base font-medium text-white">$34.85</dd>
+              <dd class="text-base font-medium text-white">$<?php echo $packages[$id]['price']; ?></dd>
             </div>
           </dl>
 
