@@ -22,7 +22,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
       </svg>
     </span>
-    <h2 class="text-xl font-semibold leading-6 text-gray-900 block tracking-tight">Select Your Pass Guarantee</h2>
+    <h2 class="text-xl font-semibold leading-6 text-gray-900 block tracking-tight">Pass Guarantee</h2>
     <button class="edit-fields edit-fields-01 absolute right-6">
 
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -41,7 +41,7 @@
 
     <div class="grid md:grid-cols-2 gap-3 mt-6">
 
-    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none">
+    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none col-span-2">
       <input type="radio" name="guarantee-type" value="no" class="sr-only" aria-labelledby="guarantee-no" aria-describedby="project-type-0-description-0 project-type-0-description-1">
       <span class="flex flex-1">
         <span class="flex flex-col justify-center items-center content-center w-full">
@@ -55,7 +55,7 @@
       </svg>
     </label>
 
-    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none">
+    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none col-span-2">
       <input type="radio" name="guarantee-type" value="yes" class="sr-only" aria-labelledby="guarantee-yes" aria-describedby="guarantee-yes project-type-1-description-1">
       <span class="flex flex-1">
         <span class="flex flex-col justify-center items-center content-center w-full">
@@ -90,7 +90,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
       </svg>
     </span>
-    <h2 class="text-xl font-semibold leading-6 text-gray-900 block tracking-tight">Select Your Certification Method</h2>
+    <h2 class="text-xl font-semibold leading-6 text-gray-900 block tracking-tight">Certification Method</h2>
 
     <button class="edit-fields edit-fields-02 absolute right-6">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -109,7 +109,7 @@
 
     <div class="grid md:grid-cols-2 gap-3 mt-6">
 
-    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none">
+    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none col-span-2">
       <input type="radio" name="certification-type" value="no" class="sr-only" aria-labelledby="certification-no" aria-describedby="certification-type project-type-0-description-1">
       <span class="flex flex-1">
         <span class="flex flex-col justify-center items-center content-center w-full">
@@ -123,11 +123,11 @@
       </svg>
     </label>
 
-    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none">
+    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none col-span-2">
       <input type="radio" name="certification-type" value="yes" class="sr-only" aria-labelledby="certification-yes" aria-describedby="certification-yes">
       <span class="flex flex-1">
         <span class="flex flex-col justify-center items-center content-center w-full">
-          <h3 id="project-type-1-label" class="block text-2xl font-semibold text-gray-900 tracking-tight">DMV Processed Verification.</h3>
+          <h3 id="project-type-1-label" class="block text-2xl font-semibold text-gray-900 tracking-tight"><span class="text-primary">DMV Processed</span> Verification.</h3>
           <span id="guarantee-yes" class="mt-1 flex items-center text-sm text-gray-500">We do the heavy lifting to ensure your matter is resolved! Our heroic support staff will monitor your ticket and confirm that it was successfully processed with the DMV and Court and will email you a confirmation number.</span>
           <span class="mt-6 text-base font-medium text-gray-700 italic tracking-tight">+$3.95</span>
         </span>
@@ -158,7 +158,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
       </svg>
     </span>
-    <h2 class="text-xl font-semibold leading-6 text-gray-900 block tracking-tight">Select Your Processing Method</h2>
+    <h2 class="text-xl font-semibold leading-6 text-gray-900 block tracking-tight">Processing Method</h2>
   </div>
 
     <div class="bg-gray-50 p-6 mt-4 rounded-md border border-gray-150 fieldset-container">
@@ -170,7 +170,7 @@
 
     <div class="grid md:grid-cols-2 gap-3 mt-6">
 
-    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none">
+    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none col-span-2">
       <input type="radio" name="processing-type" value="no" class="sr-only" aria-labelledby="processing-no" aria-describedby="processing-type">
       <span class="flex flex-1">
         <span class="flex flex-col justify-center items-center content-center w-full">
@@ -184,7 +184,7 @@
       </svg>
     </label>
 
-    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none">
+    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none col-span-2">
       <input type="radio" name="processing-type" value="yes" class="sr-only" aria-labelledby="processing-yes" aria-describedby="processing-yes">
       <span class="flex flex-1">
         <span class="flex flex-col justify-center items-center content-center w-full">
@@ -335,7 +335,6 @@ Instant Processing.</h3>
     if($s1 == 'no' && $s2 == 'no' && $s3 == 'yes') { packageID = '24'; }
 
     window.location.href = '/payment/?id=' + packageID;
-
 
   });
 
