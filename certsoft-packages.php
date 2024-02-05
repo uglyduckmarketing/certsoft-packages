@@ -52,6 +52,25 @@ function stepped_redirect_page_template ($template) {
 add_filter ('page_template', 'stepped_redirect_page_template');
 
 /* ----------------------------------------
+ADD SIGNUP PAGE TEMPLATE (STEPPED v2) 
+------------------------------------------- */
+
+function stepped_page_template_02 ($templates) {
+  $templates['page-stepped-signup-02.php'] = 'Stepped Signup Template v2';
+  return $templates;
+}
+
+add_filter ('theme_page_templates', 'stepped_page_template_02');
+
+function stepped_redirect_page_template_02 ($template) {
+  $post = get_post(); $page_template = get_post_meta( $post->ID, '_wp_page_template', true ); 
+  if ('page-stepped-signup-02.php' == basename ($page_template ))
+    $template = plugin_dir_path(__FILE__) . 'templates/page-stepped-signup-02.php';
+    return $template;
+  }
+add_filter ('page_template', 'stepped_redirect_page_template_02');
+
+/* ----------------------------------------
 ADD PAYMENT PAGE TEMPLATE 
 ------------------------------------------- */
 

@@ -32,6 +32,9 @@
     .is-editable svg {
       color: <?php the_sub_field('school_primary_color'); ?>;
     }
+    .border-primary, .selected {
+      outline: 2px solid <?php the_sub_field('school_primary_color'); ?>;
+    }
   <?php endif; ?>
   <?php endwhile; endif; ?>
 </style>
