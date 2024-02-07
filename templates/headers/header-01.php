@@ -35,6 +35,9 @@
     .border-primary, .selected {
       outline: 2px solid <?php the_sub_field('school_primary_color'); ?>;
     }
+    .selected .transition-colors {
+      background: <?php the_sub_field('school_primary_color'); ?>;
+    }
   <?php endif; ?>
   <?php endwhile; endif; ?>
 </style>
