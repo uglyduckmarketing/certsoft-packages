@@ -248,7 +248,7 @@
           </div>
           <div class="mt-2">
 
-            <div class="text-sm text-gray-500 mb-4 md:pr-8 leading-6">Our team verifies that your ticket gets masked! We monitor your ticket and confirm that it gets processed to both the DMV and Court. We will email you a confirmation number completed.</div>
+            <div class="text-sm text-gray-500 mb-4 md:pr-8 leading-6">Our team verifies that your ticket gets masked! We monitor your ticket and confirm that it gets processed to both the DMV and Court. We will email you a confirmation number once processed.</div>
 
             <div class="mt-4">
               <div class="flex gap-6 w-full md:justify-end items-center leading">
@@ -323,7 +323,7 @@
           </div>
           <div class="mt-2">
 
-            <div class="text-sm text-gray-500 mb-4 md:pr-8 leading-6">We will process your certificate instantly 24/7 365 days a year.We recommend this options due to the inefficiencies at the Court/DMV level we have seen in our 24 years of experience.</div>
+            <div class="text-sm text-gray-500 mb-4 md:pr-8 leading-6">We will process your certificate instantly 24/7 365 days a year. We recommend this options due to the inefficiencies at the Court/DMV level we have seen in our 24 years of experience.</div>
 
             <div class="mt-4">
               <div class="flex gap-6 w-full md:justify-end items-center leading">
@@ -577,7 +577,8 @@
         // Dmv Process + In A Hurry
         if($s1 == 'no' && $s2 == 'no' && $s3 == 'yes') { packageID = '24'; }
 
-        window.location.href = '/payment/?id=' + packageID;
+        // window.location.href = '/payment/?id=' + packageID;
+        window.location.href = '/course/?view=signup&registration=discount&validation_code=' + packageID;
 
       }, timeout = 600);
     });
