@@ -11,6 +11,116 @@
   <span>Have Questions?</span>
 </button>
 
+<section class="grid grid-cols-12 gap-6 mx-auto max-w-6xl px-2 md:px-0">
+
+<div class="col-span-12 md:col-span-3 order-2 pt-4 md:pt-12">
+  <div class="p-4 rounded-md border border-gray-150 shadow-sm sticky top-6 w-full">
+    <img src="https://www.ca.gov/images/logo-and-bear.png" class="p-3 h-20 w-auto mx-auto object-contain" />
+
+    <div>
+      <div class="grid gap-2 mb-2 mt-4">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-500 info-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+          </svg>
+        </div>
+        <div class="text-base font-semibold text-gray-700 leading-5 tracking-tight">This Course is California Traffic School for CA Traffic Tickets.</div>
+      </div>
+      <div class="text-sm text-gray-500">Licensed by the DMV #32145. We've helped nearly 1 million drivers mask their traffic ticket.</div>
+    </div>
+
+      <div class="flow-root">
+        <ul role="list" class="mt-5 mb-5">
+
+
+          <li>
+            <div class="relative pb-5">
+              <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
+              <div class="relative flex space-x-3 items-center">
+                <div>
+                  <span class="h-8 w-8 rounded-full bg-white flex items-center justify-center ring-8 ring-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-gray-400">
+                      <path fill-rule="evenodd" d="M9 1.5H5.625c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0 0 16.5 9h-1.875a1.875 1.875 0 0 1-1.875-1.875V5.25A3.75 3.75 0 0 0 9 1.5Zm6.61 10.936a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 14.47a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                      <path d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 0 1 3.434 1.279 9.768 9.768 0 0 0-6.963-6.963Z" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                  <div>
+                    <p class="text-sm text-gray-500"><span class="font-medium text-gray-900">FREE</span> Electronic Certificate Submission to Court & DMV.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="relative pb-5">
+              <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
+              <div class="relative flex space-x-3 items-center">
+                <div>
+                  <span class="h-8 w-8 rounded-full bg-white flex items-center justify-center ring-8 ring-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-gray-400">
+                      <path d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                  <div>
+                    <p class="text-sm text-gray-500"><span class="font-medium text-gray-900">Open-book</span> 25 Question Final Exam.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="relative pb-5">
+              <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
+              <div class="relative flex space-x-3 items-center">
+                <div>
+                  <span class="h-8 w-8 rounded-full bg-white flex items-center justify-center ring-8 ring-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-gray-400">
+                      <path fill-rule="evenodd" d="M5.625 1.5H9a3.75 3.75 0 0 1 3.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 0 1 3.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 0 1-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875Zm5.845 17.03a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V12a.75.75 0 0 0-1.5 0v4.19l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3Z" clip-rule="evenodd" />
+                      <path d="M14.25 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 16.5 7.5h-1.875a.375.375 0 0 1-.375-.375V5.25Z" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                  <div>
+                    <p class="text-sm text-gray-500"><span class="font-medium text-gray-900">FREE</span> Certificate PDF Download.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="relative">
+              <div class="relative flex space-x-3 items-center">
+                <div>
+                  <span class="h-8 w-8 rounded-full bg-white flex items-center justify-center ring-8 ring-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-gray-400">
+                      <path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z" clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                  <div>
+                    <p class="text-sm text-gray-500"><span class="font-medium text-gray-900">Only</span> 6 Short And Easy Chapters.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+        </ul>
+      </div>
+
+
+  </div>
+</div>
+
+<div class="col-span-12 md:col-span-9">
+
 <!-- Fields 01 -->
 <fieldset id="fields-01" class="max-w-4xl mx-auto mb-4 mt-12 bg-white border border-gray-150 rounded-lg shadow-sm p-5 block active-field relative">
   <div class="container flex gap-2 items-center">
@@ -21,6 +131,12 @@
       </svg>
     </span>
     <h2 class="text-base font-semibold leading-6 text-gray-900 block">Pass Guarantee Offer</h2>
+    <div class="ml-auto mr-6 text-xs font-medium text-gray-500 flex hidden mt-1 gap-2 items-center guarantee-check pr-6 pointer-events-none">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-500 -mt-0.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+      </svg>
+      <span>Pass Guarantee Added</span>
+    </div>
     <button class="edit-fields edit-fields-01 absolute right-6">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
       <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
@@ -75,7 +191,7 @@
     <label class="relative cursor-pointer focus:outline-none col-span-2 no-select" id="field-01-button">
       <input type="radio" name="guarantee-type" value="no" class="sr-only" aria-labelledby="guarantee-no" aria-describedby="project-type-0-description-0 project-type-0-description-1">
       <span class="block">
-        <span class="text-gray-500 text-xs font-semibold p-2">No Thanks, I'll Risk It.</span>
+        <span class="text-gray-600 text-sm font-semibold p-2">No Thanks, I'll Risk It.</span>
       </span>
     </label>
     <!-- End Step 01 No -->
@@ -98,7 +214,12 @@
       </svg>
     </span>
     <h2 class="text-base font-semibold leading-6 text-gray-900 block">Certification Method</h2>
-
+    <div class="ml-auto mr-6 text-xs font-medium text-gray-500 flex hidden mt-1 gap-2 items-center processing-check pr-6 pointer-events-none">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-green-500 -mt-0.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+      </svg>
+      <span>DMV Processing Added</span>
+    </div>
     <button class="edit-fields edit-fields-02 absolute right-6">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
         <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
@@ -157,7 +278,7 @@
     <label class="relative cursor-pointer focus:outline-none col-span-2 no-select" id="field-02-button">
       <input type="radio" name="certification-type" value="no" class="sr-only" aria-labelledby="certification-no">
       <span class="block">
-        <span class="text-gray-500 text-xs font-semibold p-2">No thanks, I'll monitor it on my own time.</span>
+        <span class="text-gray-600 text-sm font-semibold p-2">No thanks, I'll monitor it on my own time.</span>
       </span>
     </label>
 
@@ -232,7 +353,7 @@
     <label class="relative cursor-pointer focus:outline-none col-span-2 no-select" id="field-03-button">
       <input type="radio" name="processing-type" value="no" class="sr-only" aria-labelledby="processing-no">
       <span class="block">
-        <span class="text-gray-500 text-xs font-semibold p-2">No rush, I'll stick with standard processing.</span>
+        <span class="text-gray-600 text-sm font-semibold p-2">No rush, I'll stick with standard processing.</span>
       </span>
     </label>
 
@@ -242,50 +363,40 @@
 
 <!-- End Fields 03 -->
 
-<div class="max-w-4xl mx-auto my-4 bg-white border border-gray-150 rounded-lg shadow-sm p-5 block cursor-not-allowed mb-12">
+<div class="max-w-4xl mx-auto my-4 bg-white border border-gray-150 rounded-lg shadow-sm p-5 block cursor-not-allowed md:mb-12">
   <div class="container flex gap-2 items-center">
     <span class="text-gray-700 text-sm font-semibold w-10 h-10 rounded-full grid items-center justify-center bg-white border-2 step-number">4</span>
     <h2 class="text-base font-semibold leading-6 text-gray-900 block opacity-50">Payment</h2>
   </div>
 </div>
 
+</div>
+</section>
+
 <?php include plugin_dir_path(__FILE__) . 'side-panel.php'; ?>
 
 
 <div class="bg-white pb-12">
-  <h2 class="sr-only">Our perks</h2>
-  <div class="mx-auto max-w-6xl divide-y divide-gray-200 lg:flex lg:justify-center lg:divide-x lg:divide-y-0 lg:py-8">
-    <div class="py-8 lg:w-1/3 lg:flex-none lg:py-0">
-      <div class="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
-        <svg class="h-8 w-8 flex-shrink-0 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+  <h2 class="sr-only">Why you should buy from us</h2>
+  <div class="flex mx-auto max-w-6xl py-6 md:py-0">
+    <div class="mx-auto grid gap-0 md:gap-12 space-y-4 divide-y md:divide-gray-50 md:flex px-4 py-3 sm:px-6 lg:px-8 w-full">
+      <div class="flex items-start text-sm font-medium text-primary gap-2 pt-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 h-6 w-6 flex-none mt-0.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
         </svg>
-        <div class="ml-4 flex flex-auto flex-col-reverse">
-          <h3 class="font-medium text-gray-900">10-year all-inclusive warranty</h3>
-          <p class="text-sm text-gray-500">We’ll replace it with a new one</p>
-        </div>
+        <p class="text-gray-600">Secure SSL Payments <span class="block text-xs text-gray-400 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></p>
       </div>
-    </div>
-    <div class="py-8 lg:w-1/3 lg:flex-none lg:py-0">
-      <div class="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
-        <svg class="h-8 w-8 flex-shrink-0 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+      <div class="flex items-start text-sm font-medium text-primary gap-2 pt-4 md:pt-0">
+        <svg class="mr-2 h-6 w-6 flex-none mt-0.5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
         </svg>
-        <div class="ml-4 flex flex-auto flex-col-reverse">
-          <h3 class="font-medium text-gray-900">Free shipping on returns</h3>
-          <p class="text-sm text-gray-500">Send it back for free</p>
-        </div>
+        <p class="text-gray-600">Pass Guarantee Option <span class="block text-xs text-gray-400 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></p>
       </div>
-    </div>
-    <div class="py-8 lg:w-1/3 lg:flex-none lg:py-0">
-      <div class="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
-        <svg class="h-8 w-8 flex-shrink-0 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+      <div class="flex items-start text-sm font-medium text-primary gap-2 pt-4 md:pt-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 h-6 w-6 flex-none mt-0.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
         </svg>
-        <div class="ml-4 flex flex-auto flex-col-reverse">
-          <h3 class="font-medium text-gray-900">Free, contactless delivery</h3>
-          <p class="text-sm text-gray-500">The shipping is on us</p>
-        </div>
+        <p class="text-gray-600">CA DMV Licensed <span class="block text-xs text-gray-400 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></p>
       </div>
     </div>
   </div>
@@ -312,11 +423,6 @@
   fieldset h3 {
     margin-bottom: .5rem;
     margin-top: 1rem;
-  }
-  label svgzzz {
-    display: none;
-    position: absolute;
-    right: 20px;
   }
   label span {
     text-align: center;
@@ -366,14 +472,21 @@
   .selected .translate-x-0 {
     transform: translateX(1.2rem);
   }
-
-
-@media (min-width: 768px) {
-  .md\:w-96 {
-    width: 9rem;
-    min-width: 9rem;
+  .info-iconX {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    opacity: .65;
   }
-}
+
+  @media (min-width: 768px) {
+    .md\:w-96 {
+      width: 9rem;
+      min-width: 9rem;
+    }
+  }
 </style>
 
 <script>
@@ -409,9 +522,15 @@
   document.querySelectorAll('#field-01-button').forEach((button) => {
     button.addEventListener('click', (e) => {
       setTimeout(() => {
+        const $s1 = document.querySelector('input[name="guarantee-type"]:checked').value;
         document.getElementById('fields-01').classList.remove('active-field');
         document.getElementById('fields-01').classList.add('completed-field');
         document.getElementById('fields-02').classList.add('active-field');
+        if($s1 == 'yes') {
+          document.querySelector('.guarantee-check').classList.remove('hidden');
+        } else {
+          document.querySelector('.guarantee-check').classList.add('hidden');
+        }
       }, timeout = 600);
     });
   });
@@ -419,14 +538,20 @@
   document.querySelectorAll('#field-02-button').forEach((button) => {
     button.addEventListener('click', (e) => {
       setTimeout(() => {
+        const $s2 = document.querySelector('input[name="certification-type"]:checked').value;
         document.getElementById('fields-02').classList.remove('active-field');
         document.getElementById('fields-02').classList.add('completed-field');
         document.getElementById('fields-03').classList.add('active-field');
+        if($s2 == 'yes') {
+          document.querySelector('.processing-check').classList.remove('hidden');
+        } else {
+          document.querySelector('.processing-check').classList.add('hidden');
+        }
       }, timeout = 600);
     });
   });
 
-    document.querySelectorAll('#field-03-button').forEach((button) => {
+  document.querySelectorAll('#field-03-button').forEach((button) => {
     button.addEventListener('click', (e) => {
       setTimeout(() => {
         document.getElementById('fields-03').classList.remove('active-field');
