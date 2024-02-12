@@ -163,7 +163,7 @@
             <span class="ml-auto font-semibold text-gray-700 text-sm md:pr-2">$4.95</span>
           </div>
           <div class="mt-2">
-            <div class="text-sm text-gray-500 mb-4 md:pr-8 leading-6">Have test anxiety or don’t want to waste valuable time? Choose our "pass guarantee" and you say goodbye to your worries. The DMV only allows you 2 attempts to pass the final exam (it's ridiculous). If you fail both we'll reset your account so you can try again for <strong>FREE!</strong></div>
+            <div class="text-sm text-gray-500 mb-4 md:pr-8 leading-6">Take the stress out of traffic school with our “pass guarantee”! DMV law only allows you 2 tries to pass the final. With our guarantee we will reset your account, so you can try again and again for <strong>FREE!</strong></div>
             <div class="mt-4">
               <div class="flex gap-6 w-full md:justify-end items-center leading">
                 <div>
