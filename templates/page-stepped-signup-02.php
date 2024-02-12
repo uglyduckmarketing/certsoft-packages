@@ -19,14 +19,9 @@
 
     <div>
       <div class="grid gap-2 mb-2 mt-4">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-500 info-icon">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
-          </svg>
-        </div>
         <div class="text-base font-semibold text-gray-700 leading-5 tracking-tight">This Course is California Traffic School for CA Traffic Tickets.</div>
       </div>
-      <div class="text-sm text-gray-500">Licensed by the DMV #32145. We've helped nearly 1 million drivers mask their traffic ticket.</div>
+      <div class="text-sm text-gray-500">Licensed by the DMV #32145. We've helped over 200,000 drivers mask their traffic ticket.</div>
     </div>
 
       <div class="flow-root">
@@ -384,19 +379,19 @@
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 h-6 w-6 flex-none mt-0.5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
         </svg>
-        <p class="text-gray-600">Secure SSL Payments <span class="block text-xs text-gray-400 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></p>
+        <p class="text-gray-600">Secure SSL Payments <span class="block text-xs text-gray-400 mt-1">All payments are processed securely with military grade SSL encryption.</span></p>
       </div>
       <div class="flex items-start text-sm font-medium text-primary gap-2 pt-4 md:pt-0">
         <svg class="mr-2 h-6 w-6 flex-none mt-0.5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
         </svg>
-        <p class="text-gray-600">Pass Guarantee Option <span class="block text-xs text-gray-400 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></p>
+        <p class="text-gray-600">Pass Guarantee Option <span class="block text-xs text-gray-400 mt-1">Choose our pass guarantee for an added piece of mind.</span></p>
       </div>
       <div class="flex items-start text-sm font-medium text-primary gap-2 pt-4 md:pt-0">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 h-6 w-6 flex-none mt-0.5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
         </svg>
-        <p class="text-gray-600">CA DMV Licensed <span class="block text-xs text-gray-400 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></p>
+        <p class="text-gray-600">CA DMV Licensed <span class="block text-xs text-gray-400 mt-1">Our course is licensed with the DMV Lic #{short-code}</span></p>
       </div>
     </div>
   </div>

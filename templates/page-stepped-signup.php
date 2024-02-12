@@ -374,7 +374,7 @@ header.header__01, header.header__02, header.header__03, .cta-one, .cta-two, .to
     $('fieldset[data-step="03"] .next-button').click(function(e) {
       e.preventDefault();
       console.log(packageID);
-      idURL = window.location.origin + '/payment?id=' + packageID;
+      idURL = window.location.origin + '/course/?view=signup&registration=discount&validation_code=' + packageID;
      // alert(idURL);
       window.location.href = idURL;
     });
