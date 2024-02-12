@@ -240,7 +240,7 @@
         </div>
         <div class="grid gap-2">
           <div class="flex items-center gap-4 w-full">
-            <h3 class="py-0 my-0 font-semibold text-gray-900 text-lg tracking-tight">Add DMV Processed Verification.</h3>
+            <h3 class="py-0 my-0 font-semibold text-gray-900 text-lg tracking-tight">DMV Processed Verification.</h3>
             <span class="inline-flex items-center gap-x-1.5 rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700">
               Recommended
             </span>
@@ -248,7 +248,7 @@
           </div>
           <div class="mt-2">
 
-            <div class="text-sm text-gray-500 mb-4 md:pr-8 leading-6">We do the heavy lifting to ensure your matter is resolved! Our heroic support staff will monitor your ticket and confirm that it was successfully processed with the DMV and Court and will email you a confirmation number.</div>
+            <div class="text-sm text-gray-500 mb-4 md:pr-8 leading-6">Our team verifies that your ticket gets masked! We monitor your ticket and confirm that it gets processed to both the DMV and Court. We will email you a confirmation number completed.</div>
 
             <div class="mt-4">
               <div class="flex gap-6 w-full md:justify-end items-center leading">
@@ -315,7 +315,7 @@
         </div>
         <div class="grid gap-2">
           <div class="flex items-center gap-4 w-full">
-            <h3 class="py-0 my-0 font-semibold text-gray-900 text-lg tracking-tight"><span class="text-primary">In A Hurry?</span> Add Instant Processing.</h3>
+            <h3 class="py-0 my-0 font-semibold text-gray-900 text-lg tracking-tight"><span class="text-primary">Instant Processing!</span> DMV &amp; Court.</h3>
             <span class="inline-flex items-center gap-x-1.5 rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700">
               Recommended
             </span>
