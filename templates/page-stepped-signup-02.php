@@ -191,7 +191,7 @@
     <label class="relative cursor-pointer focus:outline-none col-span-2 no-select" id="field-01-button">
       <input type="radio" name="guarantee-type" value="no" class="sr-only" aria-labelledby="guarantee-no" aria-describedby="project-type-0-description-0 project-type-0-description-1">
       <span class="block">
-        <span class="text-gray-600 text-sm font-semibold p-2">No Thanks, I'll Risk It.</span>
+        <span class="text-gray-700 bg-white py-2 px-4 rounded-md border boreder-gray-200 transition-all duration-300 hover:text-white hover:bg-gray-900 text-sm font-semibold p-2">No Thanks, I'll Risk It.</span>
       </span>
     </label>
     <!-- End Step 01 No -->
@@ -278,7 +278,7 @@
     <label class="relative cursor-pointer focus:outline-none col-span-2 no-select" id="field-02-button">
       <input type="radio" name="certification-type" value="no" class="sr-only" aria-labelledby="certification-no">
       <span class="block">
-        <span class="text-gray-600 text-sm font-semibold p-2">No thanks, I'll monitor it on my own time.</span>
+        <span class="text-gray-700 bg-white py-2 px-4 rounded-md border boreder-gray-200 transition-all duration-300 hover:text-white hover:bg-gray-900 text-sm font-semibold p-2">No thanks, I'll monitor it on my own time.</span>
       </span>
     </label>
 
@@ -353,7 +353,7 @@
     <label class="relative cursor-pointer focus:outline-none col-span-2 no-select" id="field-03-button">
       <input type="radio" name="processing-type" value="no" class="sr-only" aria-labelledby="processing-no">
       <span class="block">
-        <span class="text-gray-600 text-sm font-semibold p-2">No rush, I'll stick with standard processing.</span>
+        <span class="text-gray-700 bg-white py-2 px-4 rounded-md border boreder-gray-200 transition-all duration-300 hover:text-white hover:bg-gray-900 text-sm font-semibold p-2">No rush, I'll stick with standard processing.</span>
       </span>
     </label>
 
