@@ -4,6 +4,12 @@
 
 <?php include plugin_dir_path(__FILE__) . 'headers/header-01.php'; ?>
 
+<?php if( have_rows('school_information', 'options') ) : while( have_rows('school_information', 'options') ): the_row(); ?>
+<?php if(get_sub_field('license_number')) : ?>
+<?php $license_number = get_sub_field('license_number'); ?>
+<?php endif; ?>
+<?php endwhile; endif; ?>
+
 <button class="mt-12 course-options faq-button bg-white py-2 px-4 border b-4 border-gray-600 rounded-full text-sm flex gap-1 content-center text-gray-600 font-medium md:mb-0 mx-auto z-50 slide-trigger fixed bottom-6 right-8">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="-ml-1.5 w-5 h-5 text-gray-500">
     <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM8.94 6.94a.75.75 0 11-1.061-1.061 3 3 0 112.871 5.026v.345a.75.75 0 01-1.5 0v-.5c0-.72.57-1.172 1.081-1.287A1.5 1.5 0 108.94 6.94zM10 15a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
@@ -11,7 +17,7 @@
   <span>Have Questions?</span>
 </button>
 
-<section class="grid grid-cols-12 gap-6 mx-auto max-w-6xl px-2 md:px-0">
+<section class="grid grid-cols-12 gap-6 mx-auto max-w-6xl">
 
 <div class="col-span-12 md:col-span-3 order-2 pt-4 md:pt-12">
   <div class="p-4 rounded-md border border-gray-150 shadow-sm sticky top-6 w-full">
@@ -21,7 +27,7 @@
       <div class="grid gap-2 mb-2 mt-4">
         <div class="text-base font-semibold text-gray-700 leading-5 tracking-tight">This Course is California Traffic School for CA Traffic Tickets.</div>
       </div>
-      <div class="text-sm text-gray-500">Licensed by the DMV #32145. We've helped over 200,000 drivers mask their traffic ticket.</div>
+      <div class="text-sm text-gray-500">Licensed by the DMV #<?php echo $license_number; ?>. We've helped over 200,000 drivers mask their traffic ticket.</div>
     </div>
 
       <div class="flow-root">
@@ -391,7 +397,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 h-6 w-6 flex-none mt-0.5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
         </svg>
-        <p class="text-gray-600">CA DMV Licensed <span class="block text-xs text-gray-400 mt-1">Our course is licensed with the DMV Lic #{short-code}</span></p>
+        <p class="text-gray-600">CA DMV Licensed <span class="block text-xs text-gray-400 mt-1">Our course is licensed with the California DMV. License #<?php echo $license_number; ?></span></p>
       </div>
     </div>
   </div>
