@@ -17,7 +17,7 @@
   <span>Have Questions?</span>
 </button>
 
-<section class="grid grid-cols-12 gap-6 mx-auto max-w-6xl">
+<section class="grid grid-cols-12 md:gap-6 mx-auto max-w-6xl">
 
 <div class="col-span-12 md:col-span-3 lg:order-2 md:pt-12">
   <div class="p-4 md:rounded-md border border-gray-150 md:shadow-sm sticky md:top-6 w-full">
@@ -123,7 +123,7 @@
 <div class="col-span-12 md:col-span-9">
 
 <!-- Fields 01 -->
-<fieldset id="fields-01" class="max-w-4xl mx-auto mb-4 md:mt-12 bg-white border border-gray-150 md:rounded-lg md:shadow-sm p-5 block active-field relative">
+<fieldset id="fields-01" class="max-w-4xl mx-auto mb-4 md:mt-12 bg-white md:border border-gray-150 md:rounded-lg md:shadow-sm p-5 block active-field relative">
   <div class="container flex gap-2 items-center">
     <span class="text-gray-700 text-sm font-semibold w-10 h-10 rounded-full grid items-center justify-center bg-white border-2 step-number">1</span>
     <span class="finished bg-green-400 text-white p-1 rounded-full border-4 border-opacity-50">
@@ -166,7 +166,7 @@
           <div class="mt-2">
             <div class="text-sm text-gray-500 mb-4 md:pr-8 leading-6">Take the stress out of traffic school with our “pass guarantee”! DMV law only allows you 2 tries to pass the final. With our guarantee we will reset your account, so you can try again and again for <strong>FREE!</strong></div>
             <div class="mt-4">
-              <div class="flex gap-6 w-full md:justify-end items-center leading">
+              <div class="grid md:flex gap-2 md:gap-6 w-full md:justify-end items-center leading">
                 <div>
                   <div class="bg-gray-200 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2" role="switch" aria-checked="false">
                     <span class="sr-only">Use setting</span>
@@ -174,7 +174,7 @@
                     <span aria-hidden="true" class="translate-x-0 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
                   </div>
                 </div>
-                <div class="bg-primary hover:bg-black text-white text-sm font-semibold py-2 px-4 rounded-md hover:cursor-pointer inline-flex gap-2 items-center">
+                <div class="bg-primary hover:bg-black text-white text-sm font-semibold py-2 px-4 rounded-md hover:cursor-pointer inline-flex gap-2 items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
                     <path fill-rule="evenodd" d="M9.661 2.237a.531.531 0 0 1 .678 0 11.947 11.947 0 0 0 7.078 2.749.5.5 0 0 1 .479.425c.069.52.104 1.05.104 1.59 0 5.162-3.26 9.563-7.834 11.256a.48.48 0 0 1-.332 0C5.26 16.564 2 12.163 2 7c0-.538.035-1.069.104-1.589a.5.5 0 0 1 .48-.425 11.947 11.947 0 0 0 7.077-2.75Zm4.196 5.954a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" />
                   </svg>
@@ -205,7 +205,7 @@
 
 <!-- Fields 02 -->
 
-<fieldset id="fields-02" class="max-w-4xl mx-auto mb-4 mt-4 bg-white border border-gray-150 rounded-lg shadow-sm p-5 block relative">
+<fieldset id="fields-02" class="max-w-4xl mx-auto md:mb-4 md:mt-4 bg-white border border-gray-150 md:rounded-lg md:shadow-sm p-5 block relative">
 
   <div class="container flex gap-2 items-center">
     <span class="text-gray-700 text-sm font-semibold w-10 h-10 rounded-full grid items-center justify-center bg-white border-2 step-number">2</span>
@@ -252,7 +252,7 @@
             <div class="text-sm text-gray-500 mb-4 md:pr-8 leading-6">Our team verifies that your ticket gets masked! We monitor your ticket and confirm that it gets processed to both the DMV and Court. We will email you a confirmation number once processed.</div>
 
             <div class="mt-4">
-              <div class="flex gap-6 w-full md:justify-end items-center leading">
+              <div class="grid md:flex gap-2 md:gap-6 w-full md:justify-end items-center leading">
                 <div>
                   <div class="bg-gray-200 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2" role="switch" aria-checked="false">
                     <span class="sr-only">Use setting</span>
@@ -261,7 +261,7 @@
                   </div>
                 </div>
 
-                <div class="bg-primary hover:bg-black text-white text-sm font-semibold py-2 px-4 rounded-md hover:cursor-pointer inline-flex gap-2 items-center">
+                <div class="bg-primary hover:bg-black text-white text-sm font-semibold py-2 px-4 rounded-md hover:cursor-pointer inline-flex gap-2 items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
                     <path fill-rule="evenodd" d="M9.661 2.237a.531.531 0 0 1 .678 0 11.947 11.947 0 0 0 7.078 2.749.5.5 0 0 1 .479.425c.069.52.104 1.05.104 1.59 0 5.162-3.26 9.563-7.834 11.256a.48.48 0 0 1-.332 0C5.26 16.564 2 12.163 2 7c0-.538.035-1.069.104-1.589a.5.5 0 0 1 .48-.425 11.947 11.947 0 0 0 7.077-2.75Zm4.196 5.954a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" clip-rule="evenodd" />
                   </svg>
@@ -291,7 +291,7 @@
 
 <!-- Fields 03 -->
 
-<fieldset id="fields-03" class="max-w-4xl mx-auto mb-4 mt-4 bg-white border border-gray-150 rounded-lg shadow-sm p-5 block">
+<fieldset id="fields-03" class="max-w-4xl mx-auto md:mb-4 md:mt-4 bg-white border border-gray-150 md:rounded-lg md:shadow-sm p-5 block">
 
   <div class="container flex gap-2 items-center">
     <span class="text-gray-700 text-sm font-semibold w-10 h-10 rounded-full grid items-center justify-center bg-white border-2 step-number">3</span>
@@ -327,7 +327,7 @@
             <div class="text-sm text-gray-500 mb-4 md:pr-8 leading-6">We will process your certificate instantly 24/7 365 days a year. We recommend this options due to the inefficiencies at the Court/DMV level we have seen in our 24 years of experience.</div>
 
             <div class="mt-4">
-              <div class="flex gap-6 w-full md:justify-end items-center leading">
+              <div class="grid md:flex gap-2 md:gap-6 w-full md:justify-end items-center leading">
                 <div>
                   <div class="bg-gray-200 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2" role="switch" aria-checked="false">
                     <span class="sr-only">Use setting</span>
@@ -336,7 +336,7 @@
                   </div>
                 </div>
 
-                <div class="bg-primary hover:bg-black text-white text-sm font-semibold py-2 px-4 rounded-md hover:cursor-pointer inline-flex gap-2 items-center">
+                <div class="bg-primary hover:bg-black text-white text-sm font-semibold py-2 px-4 rounded-md hover:cursor-pointer inline-flex gap-2 items-center justify-center">
                   <span>Add Processing & Proceed To Checkout</span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
                     <path d="M1 1.75A.75.75 0 0 1 1.75 1h1.628a1.75 1.75 0 0 1 1.734 1.51L5.18 3a65.25 65.25 0 0 1 13.36 1.412.75.75 0 0 1 .58.875 48.645 48.645 0 0 1-1.618 6.2.75.75 0 0 1-.712.513H6a2.503 2.503 0 0 0-2.292 1.5H17.25a.75.75 0 0 1 0 1.5H2.76a.75.75 0 0 1-.748-.807 4.002 4.002 0 0 1 2.716-3.486L3.626 2.716a.25.25 0 0 0-.248-.216H1.75A.75.75 0 0 1 1 1.75ZM6 17.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM15.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" />
@@ -364,7 +364,7 @@
 
 <!-- End Fields 03 -->
 
-<div class="max-w-4xl mx-auto my-4 bg-white border border-gray-150 rounded-lg shadow-sm p-5 block cursor-not-allowed md:mb-12">
+<div class="max-w-4xl mx-auto md:my-4 bg-white border border-gray-150 md:rounded-lg md:shadow-sm p-5 block cursor-not-allowed md:mb-12">
   <div class="container flex gap-2 items-center">
     <span class="text-gray-700 text-sm font-semibold w-10 h-10 rounded-full grid items-center justify-center bg-white border-2 step-number">4</span>
     <h2 class="text-base font-semibold leading-6 text-gray-900 block opacity-50">Payment</h2>
