@@ -21,7 +21,7 @@
 
 <div class="col-span-12 md:col-span-3 lg:order-2 md:pt-12">
   <div class="p-4 md:rounded-md border border-gray-150 md:shadow-sm sticky md:top-6 w-full">
-    <img src="https://www.ca.gov/images/logo-and-bear.png" class="p-3 h-20 w-auto mx-auto object-contain" />
+    <img src="https://www.ca.gov/images/logo-and-bear.png" class="p-1 md:p-3 h-12 md:h-20 w-auto md:mx-auto object-contain" />
 
     <div>
       <div class="grid gap-2 mb-2 mt-4">
@@ -161,7 +161,7 @@
             <span class="inline-flex items-center gap-x-1.5 rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700">
               Recommended
             </span>
-            <span class="ml-auto font-semibold text-gray-700 text-sm md:pr-2">$4.95</span>
+            <span class="absolute top-8 right-8 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$4.95</span>
           </div>
           <div class="mt-2">
             <div class="text-sm text-gray-500 mb-4 md:pr-8 leading-6">Take the stress out of traffic school with our “pass guarantee”! DMV law only allows you 2 tries to pass the final. With our guarantee we will reset your account, so you can try again and again for <strong>FREE!</strong></div>
@@ -245,7 +245,7 @@
             <span class="inline-flex items-center gap-x-1.5 rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700">
               Recommended
             </span>
-            <span class="ml-auto font-semibold text-gray-700 text-sm md:pr-2">$3.95</span>
+            <span class="absolute top-8 right-8 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$3.95</span>
           </div>
           <div class="mt-2">
 
@@ -320,7 +320,7 @@
             <span class="inline-flex items-center gap-x-1.5 rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700">
               Recommended
             </span>
-            <span class="ml-auto font-semibold text-gray-700 text-sm md:pr-2">$9.95</span>
+            <span class="absolute top-8 right-8 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$9.95</span>
           </div>
           <div class="mt-2">
 
@@ -486,6 +486,11 @@
     .md\:w-96 {
       width: 9rem;
       min-width: 9rem;
+    }
+  }
+  @media(max-width: 992px) {
+    .guarantee-check span, .processing-check span {
+      display: none;
     }
   }
 </style>
