@@ -671,10 +671,6 @@ video {
   order: -1;
 }
 
-.order-2 {
-  order: 2;
-}
-
 .col-span-12 {
   grid-column: span 12 / span 12;
 }
@@ -2014,6 +2010,10 @@ video {
     top: 1.5rem;
   }
 
+  .md\:order-2 {
+    order: 2;
+  }
+
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
   }
@@ -2107,11 +2107,6 @@ video {
     padding: 2.5rem;
   }
 
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -2189,6 +2184,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:order-2 {
+    order: 2;
+  }
+
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
