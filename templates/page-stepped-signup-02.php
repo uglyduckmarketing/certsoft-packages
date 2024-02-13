@@ -153,7 +153,7 @@
       <input type="radio" name="guarantee-type" value="yes" class="sr-only" aria-labelledby="guarantee-yes" aria-describedby="guarantee-yes">
       <div class="grid md:flex items-start p-2 gap-6">
         <div class="block relative">
-          <img src="https://hatchingbigideas.com/certsoft/wp-content/uploads/2024/02/drivers-icon-03.png" class="bg-white rounded-md w-28 md:w-96 h-auto object-contain object-center" />
+          <img src="https://hatchingbigideas.com/certsoft/wp-content/uploads/2024/02/drivers-icon-03.png" class="bg-white rounded-full border-4 border-gray-100 w-20 md:w-96 h-auto object-contain object-center" />
         </div>
         <div class="grid gap-2">
           <div class="flex items-center gap-4 w-full">
@@ -161,7 +161,7 @@
             <span class="inline-flex items-center gap-x-1.5 rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700">
               Recommended
             </span>
-            <span class="absolute top-8 right-8 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$4.95</span>
+            <span class="absolute top-8 right-8 md:top-0 md:right-0 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$4.95</span>
           </div>
           <div class="mt-2">
             <div class="text-sm text-gray-500 mb-4 md:pr-8 leading-6">Take the stress out of traffic school with our “pass guarantee”! DMV law only allows you 2 tries to pass the final. With our guarantee we will reset your account, so you can try again and again for <strong>FREE!</strong></div>
@@ -237,7 +237,7 @@
 
       <div class="grid md:flex items-start p-2 gap-6">
         <div class="block relative">
-          <img src="https://hatchingbigideas.com/certsoft/wp-content/uploads/2024/02/drivers-icon-02.png" class="bg-white rounded-md w-28 md:w-96 h-auto object-contain object-center" />
+          <img src="https://hatchingbigideas.com/certsoft/wp-content/uploads/2024/02/drivers-icon-02.png" class="bg-white rounded-full border-4 border-gray-100 w-20 md:w-96 h-auto object-contain object-center" />
         </div>
         <div class="grid gap-2">
           <div class="flex items-center gap-4 w-full">
@@ -245,7 +245,7 @@
             <span class="inline-flex items-center gap-x-1.5 rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700">
               Recommended
             </span>
-            <span class="absolute top-8 right-8 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$3.95</span>
+            <span class="absolute top-8 right-8 md:top-0 md:right-0 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$3.95</span>
           </div>
           <div class="mt-2">
 
@@ -312,7 +312,7 @@
 
       <div class="grid md:flex items-start p-2 gap-6">
         <div class="block relative">
-          <img src="https://hatchingbigideas.com/certsoft/wp-content/uploads/2024/02/drivers-icon-01.png" class="bg-white rounded-md w-28 md:w-96 h-auto object-contain object-center" />
+          <img src="https://hatchingbigideas.com/certsoft/wp-content/uploads/2024/02/drivers-icon-01.png" class="bg-white rounded-full border-4 border-gray-100 w-20 md:w-96 h-auto object-contain object-center" />
         </div>
         <div class="grid gap-2">
           <div class="flex items-center gap-4 w-full">
@@ -320,7 +320,7 @@
             <span class="inline-flex items-center gap-x-1.5 rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700">
               Recommended
             </span>
-            <span class="absolute top-8 right-8 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$9.95</span>
+            <span class="absolute top-8 right-8 md:top-0 md:right-0 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$9.95</span>
           </div>
           <div class="mt-2">
 
