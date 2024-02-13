@@ -2050,6 +2050,10 @@ video {
     margin-top: 1rem;
   }
 
+  .md\:mt-12 {
+    margin-top: 3rem;
+  }
+
   .md\:block {
     display: block;
   }

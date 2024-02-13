@@ -123,7 +123,7 @@
 <div class="col-span-12 md:col-span-9">
 
 <!-- Fields 01 -->
-<fieldset id="fields-01" class="max-w-4xl mx-auto mb-4 mt-12 bg-white border border-gray-150 rounded-lg shadow-sm p-5 block active-field relative">
+<fieldset id="fields-01" class="max-w-4xl mx-auto mb-4 md:mt-12 bg-white border border-gray-150 md:rounded-lg md:shadow-sm p-5 block active-field relative">
   <div class="container flex gap-2 items-center">
     <span class="text-gray-700 text-sm font-semibold w-10 h-10 rounded-full grid items-center justify-center bg-white border-2 step-number">1</span>
     <span class="finished bg-green-400 text-white p-1 rounded-full border-4 border-opacity-50">
