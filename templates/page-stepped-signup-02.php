@@ -145,7 +145,7 @@
     </button>
   </div>
 
-  <div class="p-4 mt-4 rounded-md border bg-gray-50 border-gray-150 fieldset-container">
+  <div class="p-2 md:p-4 mt-4 rounded-md border bg-gray-50 border-gray-150 fieldset-container">
     <div class="grid md:grid-cols-2 gap-3">
 
     <!-- Step 01 Yes -->
@@ -192,7 +192,7 @@
     <label class="relative cursor-pointer focus:outline-none col-span-2 no-select" id="field-01-button">
       <input type="radio" name="guarantee-type" value="no" class="sr-only" aria-labelledby="guarantee-no" aria-describedby="project-type-0-description-0 project-type-0-description-1">
       <span class="block">
-        <span class="text-gray-700 bg-white py-2 px-4 rounded-md border boreder-gray-200 transition-all duration-300 hover:text-white hover:bg-gray-900 text-sm font-semibold p-2">No Thanks, I'll Risk It.</span>
+        <span class="text-gray-700 bg-white py-2 px-4 rounded-md border boreder-gray-200 transition-all duration-300 hover:text-white hover:bg-gray-900 text-sm font-semibold p-2 my-2 md:my-1 inline-block">No Thanks, I'll Risk It.</span>
       </span>
     </label>
     <!-- End Step 01 No -->
@@ -205,7 +205,7 @@
 
 <!-- Fields 02 -->
 
-<fieldset id="fields-02" class="max-w-4xl mx-auto md:mb-4 md:mt-4 bg-white border border-gray-150 md:rounded-lg md:shadow-sm p-5 block relative">
+<fieldset id="fields-02" class="max-w-4xl mx-auto md:mb-4 md:mt-4 bg-white border-t md:border border-gray-150 md:rounded-lg md:shadow-sm p-5 block relative">
 
   <div class="container flex gap-2 items-center">
     <span class="text-gray-700 text-sm font-semibold w-10 h-10 rounded-full grid items-center justify-center bg-white border-2 step-number">2</span>
@@ -228,7 +228,7 @@
     </button>
   </div>
 
-  <div class="bg-gray-50 p-4 mt-4 rounded-md border border-gray-150 fieldset-container">
+  <div class="bg-gray-50 p-2 md:p-4 mt-4 rounded-md border border-gray-150 fieldset-container">
 
     <div class="grid md:grid-cols-2 gap-3">
 
@@ -279,7 +279,7 @@
     <label class="relative cursor-pointer focus:outline-none col-span-2 no-select" id="field-02-button">
       <input type="radio" name="certification-type" value="no" class="sr-only" aria-labelledby="certification-no">
       <span class="block">
-        <span class="text-gray-700 bg-white py-2 px-4 rounded-md border boreder-gray-200 transition-all duration-300 hover:text-white hover:bg-gray-900 text-sm font-semibold p-2">No thanks, I'll monitor it on my own time.</span>
+        <span class="text-gray-700 bg-white py-2 px-4 rounded-md border boreder-gray-200 transition-all duration-300 hover:text-white hover:bg-gray-900 text-sm font-semibold p-2 my-2 md:my-1 inline-block">No thanks, I'll monitor it on my own time.</span>
       </span>
     </label>
 
@@ -303,7 +303,7 @@
     <h2 class="text-base font-semibold leading-6 text-gray-900 block">Processing Method</h2>
   </div>
 
-    <div class="bg-gray-50 p-4 mt-4 rounded-md border border-gray-150 fieldset-container">
+    <div class="bg-gray-50 p-2 md:p-4 mt-4 rounded-md border border-gray-150 fieldset-container">
 
     <div class="grid md:grid-cols-2 gap-3">
 
@@ -354,7 +354,7 @@
     <label class="relative cursor-pointer focus:outline-none col-span-2 no-select" id="field-03-button">
       <input type="radio" name="processing-type" value="no" class="sr-only" aria-labelledby="processing-no">
       <span class="block">
-        <span class="text-gray-700 bg-white py-2 px-4 rounded-md border boreder-gray-200 transition-all duration-300 hover:text-white hover:bg-gray-900 text-sm font-semibold p-2">No rush, I'll stick with standard processing.</span>
+        <span class="text-gray-700 bg-white py-2 px-4 rounded-md border boreder-gray-200 transition-all duration-300 hover:text-white hover:bg-gray-900 text-sm font-semibold p-2 my-2 md:my-1 inline-block">No rush, I'll stick with standard processing.</span>
       </span>
     </label>
 
