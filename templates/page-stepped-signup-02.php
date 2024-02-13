@@ -19,7 +19,7 @@
 
 <section class="grid grid-cols-12 gap-6 mx-auto max-w-6xl">
 
-<div class="col-span-12 md:col-span-3 order-2 pt-4 md:pt-12">
+<div class="col-span-12 md:col-span-3 md:order-2 pt-4 md:pt-12">
   <div class="p-4 rounded-md border border-gray-150 shadow-sm sticky top-6 w-full">
     <img src="https://www.ca.gov/images/logo-and-bear.png" class="p-3 h-20 w-auto mx-auto object-contain" />
 
