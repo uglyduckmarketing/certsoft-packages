@@ -161,7 +161,7 @@
             <span class="inline-flex items-center gap-x-1.5 rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700">
               Recommended
             </span>
-            <span class="absolute top-8 right-8 md:top-0 md:right-0 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$4.95</span>
+            <span class="absolute md:inline-block top-8 right-8 md:top-0 md:right-0 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$4.95</span>
           </div>
           <div class="mt-2">
             <div class="text-sm text-gray-500 mb-4 md:pr-8 leading-6">Take the stress out of traffic school with our “pass guarantee”! DMV law only allows you 2 tries to pass the final. With our guarantee we will reset your account, so you can try again and again for <strong>FREE!</strong></div>
@@ -245,7 +245,7 @@
             <span class="inline-flex items-center gap-x-1.5 rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700">
               Recommended
             </span>
-            <span class="absolute top-8 right-8 md:top-0 md:right-0 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$3.95</span>
+            <span class="absolute md:inline-block top-8 right-8 md:top-0 md:right-0 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$3.95</span>
           </div>
           <div class="mt-2">
 
@@ -320,7 +320,7 @@
             <span class="inline-flex items-center gap-x-1.5 rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700">
               Recommended
             </span>
-            <span class="absolute top-8 right-8 md:top-0 md:right-0 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$9.95</span>
+            <span class="absolute md:inline-block top-8 right-8 md:top-0 md:right-0 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$9.95</span>
           </div>
           <div class="mt-2">
 
@@ -406,12 +406,45 @@
 
 
 <style>
+  header.header__01, header.header__02, header.header__03, footer, .cta-one, .cta-two, .cta-three {
+    display: none !important;
+  }
   html, body {
     background: #ffffff;
     border-bottom: none !important;
     padding-bottom: 0 !important;
     font-family: 'Inter', sans-serif;
   }
+  .container {
+    width: auto;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+  }
+
   h1, h2, h3, h4 {
     font-family: 'Inter', sans-serif;
   }
