@@ -367,7 +367,7 @@
 <div class="max-w-4xl mx-auto md:my-4 bg-white border border-gray-150 md:rounded-lg md:shadow-sm p-5 block cursor-not-allowed md:mb-12">
   <div class="container flex gap-2 items-center">
     <span class="text-gray-700 text-sm font-semibold w-10 h-10 rounded-full grid items-center justify-center bg-white border-2 step-number">4</span>
-    <h2 class="text-base font-semibold leading-6 text-gray-900 block opacity-50">Payment</h2>
+    <h2 class="text-base font-semibold leading-6 text-gray-900 block opacity-50">Secure Checkout</h2>
   </div>
 </div>
 
@@ -553,7 +553,7 @@
   document.querySelectorAll('input[type="radio"]').forEach((radio) => {
     radio.addEventListener('change', (e) => {
       document.querySelectorAll('input[type="radio"]').forEach((radio) => {
-        radio.parentNode.classList.remove('selected');
+        // radio.parentNode.classList.remove('selected');
         // radio.parentNode.querySelector('svg').style.display = 'none';
       });
       e.target.parentNode.classList.add('selected');
