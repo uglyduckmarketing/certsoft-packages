@@ -553,11 +553,13 @@
   document.querySelectorAll('input[type="radio"]').forEach((radio) => {
     radio.addEventListener('change', (e) => {
       document.querySelectorAll('input[type="radio"]').forEach((radio) => {
-        // radio.parentNode.classList.remove('selected');
-        // radio.parentNode.querySelector('svg').style.display = 'none';
+        if(radio.checked) {
+          radio.parentNode.classList.add('selected');
+        } else {
+          radio.parentNode.classList.remove('selected');
+        }
       });
       e.target.parentNode.classList.add('selected');
-      // e.target.parentNode.querySelector('svg').style.display = 'block';
     });
   });
 
