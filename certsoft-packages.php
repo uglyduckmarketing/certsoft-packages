@@ -106,7 +106,7 @@ UPDATE PATH FOR ACF-JSON (ACF)
 define( 'CS_DIR_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
  
 function acf_json_path( $jsonPath ) {
-  $jsonPath = CS_DIR_PATH . '/acf-json';
+  $jsonPath = CS_DIR_PATH . '/data/acf-json';
   return $jsonPath;   
 }
 add_filter('acf/settings/save_json', 'acf_json_path');
@@ -120,7 +120,7 @@ function my_acf_json_load_point( $jsonPaths ) {
     unset($jsonPaths[0]);
 
     // Append the new path and return it.
-    $jsonPaths[] = CS_DIR_PATH . '/acf-json';
+    $jsonPaths[] = CS_DIR_PATH . '/data/acf-json';
 
     return $jsonPaths;    
 }
