@@ -367,7 +367,13 @@
 <div class="max-w-4xl mx-auto md:my-4 bg-white border border-gray-150 md:rounded-lg md:shadow-sm p-5 block cursor-not-allowed md:mb-12">
   <div class="container flex gap-2 items-center">
     <span class="text-gray-700 text-sm font-semibold w-10 h-10 rounded-full grid items-center justify-center bg-white border-2 step-number">4</span>
-    <h2 class="text-base font-semibold leading-6 text-gray-900 block opacity-50">Secure Checkout</h2>
+    <h2 class="text-base font-semibold leading-6 text-gray-900 opacity-50 flex gap-2 items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 -mt-0.5">
+  <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a3 3 0 0 0-3 3v6.75a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3v-6.75a3 3 0 0 0-3-3v-3c0-2.9-2.35-5.25-5.25-5.25Zm3.75 8.25v-3a3.75 3.75 0 1 0-7.5 0v3h7.5Z" clip-rule="evenodd" />
+      <span>Secure Checkout Page</span>
+    </h2>
+</svg>
+</h2>
   </div>
 </div>
 
