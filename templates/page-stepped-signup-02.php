@@ -138,7 +138,7 @@
       </svg>
       <span>Pass Guarantee Added</span>
     </div>
-    <button class="edit-fields edit-fields-01 absolute right-6">
+    <button class="edit-fields edit-fields-01 absolute right-2">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
       <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
     </svg>
@@ -149,7 +149,7 @@
     <div class="grid md:grid-cols-2 gap-3">
 
     <!-- Step 01 Yes -->
-    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none col-span-2" id="field-01-button">
+    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 focus:outline-none col-span-2" id="field-01-button">
       <input type="radio" name="guarantee-type" value="yes" class="sr-only" aria-labelledby="guarantee-yes" aria-describedby="guarantee-yes">
       <div class="grid md:flex items-start p-2 gap-6">
         <div class="block relative">
@@ -161,7 +161,7 @@
             <span class="inline-flex items-center gap-x-1.5 rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700">
               Recommended
             </span>
-            <span class="absolute md:inline-block top-8 right-8 md:top-0 md:right-0 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$4.95</span>
+            <span class="md:inline-block top-8 right-8 md:top-0 md:right-0 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2 price">$4.95</span>
           </div>
           <div class="mt-2">
             <div class="text-sm text-gray-500 mb-4 md:pr-8 leading-6">Take the stress out of traffic school with our “pass guarantee”! DMV law only allows you 2 tries to pass the final. With our guarantee we will reset your account, so you can try again and again for <strong>FREE!</strong></div>
@@ -221,7 +221,7 @@
       </svg>
       <span>DMV Processing Added</span>
     </div>
-    <button class="edit-fields edit-fields-02 absolute right-6">
+    <button class="edit-fields edit-fields-02 absolute right-2">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
         <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
       </svg>
@@ -232,7 +232,7 @@
 
     <div class="grid md:grid-cols-2 gap-3">
 
-    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none col-span-2" id="field-02-button">
+    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 focus:outline-none col-span-2" id="field-02-button">
       <input type="radio" name="certification-type" value="yes" class="sr-only" aria-labelledby="certification-yes" aria-describedby="certification-yes">
 
       <div class="grid md:flex items-start p-2 gap-6">
@@ -245,7 +245,7 @@
             <span class="inline-flex items-center gap-x-1.5 rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700">
               Recommended
             </span>
-            <span class="absolute md:inline-block top-8 right-8 md:top-0 md:right-0 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$3.95</span>
+            <span class="md:inline-block top-8 right-8 md:top-0 md:right-0 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2 price">$3.95</span>
           </div>
           <div class="mt-2">
 
@@ -307,7 +307,7 @@
 
     <div class="grid md:grid-cols-2 gap-3">
 
-    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none col-span-2" id="field-03-button">
+    <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 focus:outline-none col-span-2" id="field-03-button">
       <input type="radio" name="processing-type" value="yes" class="sr-only" aria-labelledby="processing-yes" aria-describedby="processing-yes">
 
       <div class="grid md:flex items-start p-2 gap-6">
@@ -320,7 +320,7 @@
             <span class="inline-flex items-center gap-x-1.5 rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700">
               Recommended
             </span>
-            <span class="absolute md:inline-block top-8 right-8 md:top-0 md:right-0 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2">$9.95</span>
+            <span class="md:inline-block top-8 right-8 md:top-0 md:right-0 md:relative ml-auto font-semibold text-gray-700 text-sm md:pr-2 price">$9.95</span>
           </div>
           <div class="mt-2">
 
@@ -377,23 +377,23 @@
 <?php include plugin_dir_path(__FILE__) . 'side-panel.php'; ?>
 
 
-<div class="bg-white pb-12">
+<div class="bg-white pb-12 pt-6">
   <h2 class="sr-only">Why you should buy from us</h2>
   <div class="flex mx-auto max-w-6xl py-6 md:py-0">
-    <div class="mx-auto grid gap-0 md:gap-12 space-y-4 divide-y md:divide-gray-50 md:flex px-4 py-3 sm:px-6 lg:px-8 w-full">
-      <div class="flex items-start text-sm font-medium text-primary gap-2 pt-4 w-full">
+    <div class="mx-auto grid gap-0 md:gap-12  md:flex px-4 py-3 sm:px-6 lg:px-8 w-full">
+      <div class="flex items-start text-sm font-medium text-primary gap-2 pt-4 w-full md:pr-8 md:pt-0">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 h-6 w-6 flex-none mt-0.5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
         </svg>
         <p class="text-gray-600">Secure SSL Payments <span class="block text-xs text-gray-400 mt-1">All payments are processed securely with military grade SSL encryption.</span></p>
       </div>
-      <div class="flex items-start text-sm font-medium text-primary gap-2 pt-4 w-full md:pt-0">
+      <div class="flex items-start text-sm font-medium text-primary gap-2 pt-4 w-full md:pr-8 md:pt-0">
         <svg class="mr-2 h-6 w-6 flex-none mt-0.5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
         </svg>
         <p class="text-gray-600">Pass Guarantee Option <span class="block text-xs text-gray-400 mt-1">Choose our pass guarantee for an added piece of mind.</span></p>
       </div>
-      <div class="flex items-start text-sm font-medium text-primary gap-2 pt-4 w-full md:pt-0">
+      <div class="flex items-start text-sm font-medium text-primary gap-2 pt-4 w-full md:pr-8 md:pt-0">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 h-6 w-6 flex-none mt-0.5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
         </svg>
@@ -524,6 +524,9 @@
   @media(max-width: 992px) {
     .guarantee-check span, .processing-check span {
       display: none;
+    }
+    .price {
+      position: absolute;
     }
   }
 </style>
