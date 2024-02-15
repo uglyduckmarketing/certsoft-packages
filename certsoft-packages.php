@@ -3,7 +3,7 @@
 Plugin Name: Certsoft Packages
 Description: Add the Certsoft signup and payments.
 Author: Matt Lewis
-Version: 1.1.3
+Version: 1.1.4
 */
 
 function cs_enqueue() {
@@ -93,11 +93,11 @@ add_filter ('page_template', 'payment_redirect_page_template');
 ADD GOOGLE MAPS API KEY
 ------------------------------------------- */
 
-function my_acf_google_map_api( $api ){
+function acf_google_map_api( $api ){
   $api['key'] = 'AIzaSyB7Z4YoEup77-FJAz_WMPiwNfhePa2-KhI';
   return $api;
 }
-add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+add_filter('acf/fields/google_map/api', 'acf_google_map_api');
 
 /* ----------------------------------------
 UPDATE PATH FOR ACF-JSON (ACF)
