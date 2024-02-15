@@ -103,11 +103,11 @@ add_filter('acf/fields/google_map/api', 'acf_google_map_api');
 UPDATE PATH FOR ACF-JSON (ACF)
 ------------------------------------------- */
 
-define( 'MY_PLUGIN_DIR_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
+define( 'CS_DIR_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
  
-function acf_json_path( $path ) {
-  $path = MY_PLUGIN_DIR_PATH . '/acf-json';
-  return $path;   
+function acf_json_path( $jsonPath ) {
+  $jsonPath = CS_DIR_PATH . '/acf-json';
+  return $jsonPath;   
 }
 add_filter('acf/settings/save_json', 'acf_json_path');
 
@@ -115,13 +115,13 @@ add_filter('acf/settings/save_json', 'acf_json_path');
 LOAD ACF-JSON
 ------------------------------------------- */
 
-function my_acf_json_load_point( $paths ) {
+function my_acf_json_load_point( $jsonPaths ) {
     // Remove the original path (optional).
-    unset($paths[0]);
+    unset($jsonPaths[0]);
 
     // Append the new path and return it.
-    $paths[] = MY_PLUGIN_DIR_PATH . '/acf-json';
+    $jsonPaths[] = CS_DIR_PATH . '/acf-json';
 
-    return $paths;    
+    return $jsonPaths;    
 }
 add_filter( 'acf/settings/load_json', 'my_acf_json_load_point' );
