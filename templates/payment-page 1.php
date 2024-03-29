@@ -1,72 +1,9 @@
-<?php
-get_header();
+<?php get_header(); ?>
 
-include plugin_dir_path(__FILE__) . 'headers/header-01.php';
-require_once plugin_dir_path(__FILE__) . 'packages.php';
-
-// Included from packages.php
-$package_details = $packages;
-
-// Get package price by 
-$pkg_id = $_GET['id'];
-
-$package_matched = array();
-foreach($package_details as $index => $columns) {
-    foreach($columns as $key => $value) {
-        if ($key == 'packageID' && $value == $pkg_id) {
-            $package_matched[] = $columns;
-        }
-    }
-}
-//print_r($package_matched);
-
-// Check and set package missing error
-$if_package_missing = '';
-
-if($package_matched){
-
-	$packageID = isset($package_matched[0]['packageID']) ? $package_matched[0]['packageID'] : null;
-	$packagePrice = isset($package_matched[0]['packagePrice']) ? $package_matched[0]['packagePrice'] : null;
-	
-	//$packagePrice = number_format($packagePrice, 2);
-	
-	$packageTitle = isset($package_matched[0]['packageTitle']) ? $package_matched[0]['packageTitle'] : null;
-	$packageDescription = isset($package_matched[0]['packageDescription']) ? $package_matched[0]['packageDescription'] : null;	
-
-} else {
-	$if_package_missing =  'Package amount is missing, Package ID did not match!!!';
-} 
-
-// Get logged in user details
-global $current_user;
-	wp_get_current_user();
-
-	$user_firstname = isset($current_user->certsoft_user_firstname) ? $current_user->certsoft_user_firstname : null;
-	$user_lastname = isset($current_user->certsoft_user_lastname) ? $current_user->certsoft_user_lastname : null;
-	$display_name = isset($current_user->display_name) ? $current_user->display_name : null;
-	$user_email = isset($current_user->user_email) ? $current_user->user_email : null;
-	$drivers_license_dob = isset($current_user->certsoft_user_dob) ? $current_user->certsoft_user_dob : null;
-	$drivers_license_number = isset($current_user->certsoft_user_license_number) ? $current_user->certsoft_user_license_number : null;
-	$drivers_license_state = isset($current_user->certsoft_user_license_state) ? $current_user->certsoft_user_license_state : null;
-
-?>
-
-<style>
-.invalid-feedback {
-	color: #ff0000;
-}
-.custom-text-success {
-	color: #198754;
-}
-.custom-text-danger {
-	color: #dc3545;
-}
-.CollectJSInlineIframe {
-    height: 50px !important;
-}
-</style>
+<?php include plugin_dir_path(__FILE__) . 'headers/header-01.php'; ?>
 
 <!-- Modal -->
+
 <div class="relative z-10 hidden" id="terms-modal" aria-labelledby="modal-title" role="dialog" aria-modal="true">
 
   <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
@@ -142,40 +79,17 @@ global $current_user;
 <!-- Form -->
 
 <div class="bg-white payment-form">
-
   <div class="mx-auto max-w-2xl sm:px-6 lg:max-w-7xl lg:px-8 pb-6 md:py-16">
 
-    <!--form id="payment-form" class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16 faded" onsubmit="return false;" novalidate-->
-    <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16 faded">
-
-      <div class="form-container mt-4">
-
-    <form id="payment-form">
+    <form class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16 faded">
       
-	<?php if (!empty($_GET['id']) && isset($_GET['id'])) { ?>
-	    <input type="hidden" value="<?php echo $packageID; ?>" name="package_id" class="package_id" id="package_id">
-		<input type="hidden" value="<?php echo $packagePrice; ?>" name="package_amount" class="package_amount" id="package_amount">
-	<?php } else {
-		     die('Package ID missing!!!');
-	      } 
-	?>
+	  
+	<?php if (!empty($_GET['id'])) { ?>
+	    <input type="text" value="<?php echo $_GET['id']; ?>" name="course_id" class="course-id" id="course-id">
+		<input type="text" value="6" name="school_id" class="school-id" id="school-id">
+	<?php } ?>
 	
-	<?php	
-	if( !empty($if_package_missing) && isset($if_package_missing) ) {
-		echo $if_package_missing;
-		die();
-	}
-	?>
-
-	<?php if( have_rows('school_information', 'options') ) : while( have_rows('school_information', 'options') ): the_row(); ?>
-	<?php if(!empty(get_sub_field('school_id'))) : ?>
-        <input type="hidden" name="school_id" class="school_id" id="school_id" value="<?php echo get_sub_field( 'school_id' ); ?>">
-	<?php endif; ?>
-
-	<?php if(!empty(get_sub_field('certsoft_auth_token'))) : ?>
-        <input type="hidden" name="certsoft_auth_token" class="certsoft_auth_token" id="certsoft_auth_token" value="<?php echo get_sub_field( 'certsoft_auth_token' ); ?>">
-	<?php endif; ?>
-	<?php endwhile; endif; ?>
+      <div class="form-container mt-4">
 
         <div class="progress mb-8">
           <div class="progress-bar bg-primary" id="progress-bar"></div>
@@ -234,6 +148,8 @@ global $current_user;
         <?php endif; ?>
         <?php endwhile; endif; ?>
 
+
+
         <div class="student-details" id="step-01">
 
           <div class="step-heading flex justify-between items-center">
@@ -254,35 +170,35 @@ global $current_user;
             <div>
               <label for="first-name">First Name <span class="text-red-500">*</span></label>
               <div class="mt-1">
-                <input type="text" id="first-name" name="first-name" value="<?= isset($user_firstname) ? $user_firstname : '' ?>" autocomplete="given-name" required>
+                <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
               </div>
             </div>
 
             <div>
               <label for="last-name">Last Name <span class="text-red-500">*</span></label>
               <div class="mt-1">
-                <input type="text" id="last-name" name="last-name" value="<?= isset($user_lastname) ? $user_lastname : '' ?>" autocomplete="family-name" required>
+                <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
               </div>
             </div>
 
             <div class="sm:col-span-2">
               <label for="email">Email Address <span class="text-red-500">*</span></label>
               <div class="mt-1">
-                <input type="email" name="email" id="email" value="<?= isset($user_email) ? $user_email : '' ?>" autocomplete="email" required>
+                <input type="email" name="email" id="email" autocomplete="email" required>
               </div>
             </div>
 
             <div class="sm:col-span-2">
               <label for="confirm_email">Confirm Email Address <span class="text-red-500">*</span></label>
               <div class="mt-1">
-                <input type="email" name="confirm_email" id="confirm_email" value="<?= isset($user_email) ? $user_email : '' ?>" autocomplete="email" required>
+                <input type="email" name="confirm_email" id="confirm_email" autocomplete="email" required>
               </div>
             </div>
 
             <div class="sm:col-span-2">
               <label for="password">Password <span class="text-red-500">*</span></label>
               <div class="mt-1">
-                <input type="password" name="password" id="password" required>
+                <input type="password" name="passowrd" id="password" required>
               </div>
             </div>
 
@@ -291,7 +207,7 @@ global $current_user;
             <div class="sm:col-span-2">
               <label for="dob">Date Of Birth</label>
               <div class="mt-1">
-                <input type="date" id="dob" name="dob" value="<?= isset($drivers_license_dob) ? $drivers_license_dob : '' ?>">
+                <input type="date" id="dob" name="dob">
               </div>
             </div>
             <?php endif; ?>
@@ -302,7 +218,7 @@ global $current_user;
             <div class="sm:col-span-2">
               <label for="license">License Number</label>
               <div class="mt-1">
-                <input type="text" id="license-number" name="license-number" value="<?= isset($drivers_license_number) ? $drivers_license_number : '' ?>">
+                <input type="text" id="license-number" name="license-number">
               </div>
             </div>
 
@@ -310,57 +226,57 @@ global $current_user;
               <label for="license-state">License State of Issuance</label>
               <div class="mt-1">
                 <select id="license-state" name="license-state">
-                <option <?php if($drivers_license_state == 'AL') echo "selected"; ?> value="AL">Alabama</option>
-                <option <?php if($drivers_license_state == 'AK') echo "selected"; ?> value="AK">Alaska</option>
-                <option <?php if($drivers_license_state == 'AZ') echo "selected"; ?> value="AZ">Arizona</option>
-                <option <?php if($drivers_license_state == 'AR') echo "selected"; ?> value="AR">Arkansas</option>
-                <option <?php if($drivers_license_state == 'CA') echo "selected"; ?> value="CA">California</option>
-                <option <?php if($drivers_license_state == 'CO') echo "selected"; ?> value="CO">Colorado</option>
-                <option <?php if($drivers_license_state == 'CT') echo "selected"; ?> value="CT">Connecticut</option>
-                <option <?php if($drivers_license_state == 'DE') echo "selected"; ?> value="DE">Delaware</option>
-                <option <?php if($drivers_license_state == 'DC') echo "selected"; ?> value="DC">District Of Columbia</option>
-                <option <?php if($drivers_license_state == 'FL') echo "selected"; ?> value="FL">Florida</option>
-                <option <?php if($drivers_license_state == 'GA') echo "selected"; ?> value="GA">Georgia</option>
-                <option <?php if($drivers_license_state == 'HI') echo "selected"; ?> value="HI">Hawaii</option>
-                <option <?php if($drivers_license_state == 'ID') echo "selected"; ?> value="ID">Idaho</option>
-                <option <?php if($drivers_license_state == 'IL') echo "selected"; ?> value="IL">Illinois</option>
-                <option <?php if($drivers_license_state == 'IN') echo "selected"; ?> value="IN">Indiana</option>
-                <option <?php if($drivers_license_state == 'IA') echo "selected"; ?> value="IA">Iowa</option>
-                <option <?php if($drivers_license_state == 'KS') echo "selected"; ?> value="KS">Kansas</option>
-                <option <?php if($drivers_license_state == 'KY') echo "selected"; ?> value="KY">Kentucky</option>
-                <option <?php if($drivers_license_state == 'LA') echo "selected"; ?> value="LA">Louisiana</option>
-                <option <?php if($drivers_license_state == 'ME') echo "selected"; ?> value="ME">Maine</option>
-                <option <?php if($drivers_license_state == 'MD') echo "selected"; ?> value="MD">Maryland</option>
-                <option <?php if($drivers_license_state == 'MA') echo "selected"; ?> value="MA">Massachusetts</option>
-                <option <?php if($drivers_license_state == 'MI') echo "selected"; ?> value="MI">Michigan</option>
-                <option <?php if($drivers_license_state == 'MN') echo "selected"; ?> value="MN">Minnesota</option>
-                <option <?php if($drivers_license_state == 'MS') echo "selected"; ?> value="MS">Mississippi</option>
-                <option <?php if($drivers_license_state == 'MO') echo "selected"; ?> value="MO">Missouri</option>
-                <option <?php if($drivers_license_state == 'MT') echo "selected"; ?> value="MT">Montana</option>
-                <option <?php if($drivers_license_state == 'NE') echo "selected"; ?> value="NE">Nebraska</option>
-                <option <?php if($drivers_license_state == 'NV') echo "selected"; ?> value="NV">Nevada</option>
-                <option <?php if($drivers_license_state == 'NH') echo "selected"; ?> value="NH">New Hampshire</option>
-                <option <?php if($drivers_license_state == 'NJ') echo "selected"; ?> value="NJ">New Jersey</option>
-                <option <?php if($drivers_license_state == 'NM') echo "selected"; ?> value="NM">New Mexico</option>
-                <option <?php if($drivers_license_state == 'NY') echo "selected"; ?> value="NY">New York</option>
-                <option <?php if($drivers_license_state == 'NC') echo "selected"; ?> value="NC">North Carolina</option>
-                <option <?php if($drivers_license_state == 'ND') echo "selected"; ?> value="ND">North Dakota</option>
-                <option <?php if($drivers_license_state == 'OH') echo "selected"; ?> value="OH">Ohio</option>
-                <option <?php if($drivers_license_state == 'OK') echo "selected"; ?> value="OK">Oklahoma</option>
-                <option <?php if($drivers_license_state == 'OR') echo "selected"; ?> value="OR">Oregon</option>
-                <option <?php if($drivers_license_state == 'PA') echo "selected"; ?> value="PA">Pennsylvania</option>
-                <option <?php if($drivers_license_state == 'RI') echo "selected"; ?> value="RI">Rhode Island</option>
-                <option <?php if($drivers_license_state == 'SC') echo "selected"; ?> value="SC">South Carolina</option>
-                <option <?php if($drivers_license_state == 'SD') echo "selected"; ?> value="SD">South Dakota</option>
-                <option <?php if($drivers_license_state == 'TN') echo "selected"; ?> value="TN">Tennessee</option>
-                <option <?php if($drivers_license_state == 'TX') echo "selected"; ?> value="TX">Texas</option>
-                <option <?php if($drivers_license_state == 'UT') echo "selected"; ?> value="UT">Utah</option>
-                <option <?php if($drivers_license_state == 'VT') echo "selected"; ?> value="VT">Vermont</option>
-                <option <?php if($drivers_license_state == 'VA') echo "selected"; ?> value="VA">Virginia</option>
-                <option <?php if($drivers_license_state == 'WA') echo "selected"; ?> value="WA">Washington</option>
-                <option <?php if($drivers_license_state == 'WV') echo "selected"; ?> value="WV">West Virginia</option>
-                <option <?php if($drivers_license_state == 'WI') echo "selected"; ?> value="WI">Wisconsin</option>
-                <option <?php if($drivers_license_state == 'WY') echo "selected"; ?> value="WY">Wyoming</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option selected value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
                 </select>
               </div>
             </div>
@@ -376,28 +292,19 @@ global $current_user;
               </div>
             </div>
 
-            <div id="check_response" class="col-span-4 mt-2"></div>
-			
             <div class="mt-6 col-span-4">
-			<?php if(get_current_user_id()){ ?>
-              <div id="check_response" class="custom-text-success col-span-4 mt-2">Student details captured already. Proceed to payment step to purchase course.</div>
-			<?php } else { ?>
               <button id="student-details-confirm" class="w-full rounded-md border border-transparent bg-blue-600 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-50 flex gap-4 items-center justify-center bg-primary">
                 Next step
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                 </svg>
               </button>
-			<?php } ?>
             </div>
 
           </div>
 
         </div>
-		</form>
-		
-		<form id="checkout-form">
-		
+
         <!-- Payment -->
         <div class="mt-10 is-editable" id="step-02">
 
@@ -433,9 +340,8 @@ global $current_user;
           </div>
         </div>
 
-        
+
         <div class="mt-6 grid grid-cols-4 gap-x-4 gap-y-3">
-        <!--div class="mt-6 grid gap-x-4 gap-y-3"-->
 
           <div class="flex hidden col-span-4 items-center gap-3 mb-4" id="name-container">
             <h2 class="text-2xl" id="cc-name"></h2>
@@ -449,34 +355,33 @@ global $current_user;
           <div class="col-span-4" id="card-name">
             <label for="name-on-card">Name On Card <span class="text-red-500">*</span></label>
             <div class="mt-1">
-              <input type="text" id="name-on-card" value="<?= isset($display_name) ? $display_name : '' ?>" name="name-on-card" autocomplete="cc-name">
+              <input type="text" id="name-on-card" name="name-on-card" autocomplete="cc-name">
             </div>
           </div>
 
             <div class="col-span-4">
               <label for="card-number">Card Number <span class="text-red-500">*</span></label>
               <div class="mt-1">
-                <div id="ccnumber"></div>
+                <input type="text" id="card-number" name="card-number" autocomplete="cc-number" required>
               </div>
             </div>
 
             <div class="col-span-2">
               <label for="expiration-date">Expiration Date (MM/YY) <span class="text-red-500">*</span></label>
               <div class="mt-1">
-                <div id="ccexp"></div>
+                <input type="text" name="expiration-date" id="expiration-date" autocomplete="cc-exp" required>
               </div>
             </div>
 
             <div class="col-span-2">
               <label for="cvc">CVC <span class="text-red-500">*</span></label>
               <div class="mt-1">
-                <div id="cvv"></div>
+                <input type="text" name="cvc" id="cvc" autocomplete="csc" required>
               </div>
-            </div>	  
+            </div>
 
-            <div id="checkout_response" class="col-span-4 mt-2"></div>
-            <div class="border-t border-gray-300 col-span-4 pt-4">
-              <button id="payButton" name="form-submit" class="w-full rounded-md border border-transparent bg-blue-600 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-50 flex gap-4 items-center justify-center bg-primary">
+            <div class="border-t border-gray-300 col-span-4 mt-4 pt-4">
+              <button type="submit" class="w-full rounded-md border border-transparent bg-blue-600 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-50 flex gap-4 items-center justify-center bg-primary">
                 Purchase Course
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
@@ -484,8 +389,7 @@ global $current_user;
               </button>
             </div>
             
-        </div>
-        </form>
+            </div>
 
           </div>
         </div>
@@ -497,10 +401,9 @@ global $current_user;
         <div class="md:mt-4 md:rounded-lg bg-indigo-950 shadow-sm sticky md:top-6 faded">
           <div class="py-10 px-4 md:p-10">
             <span class="mb-4 mt-2 text-white text-xs block">Selected Package</span>
-            <h2 class="text-3xl mb-4 md:pr-12 text-white"><?php echo $packageTitle; ?></h2>
-			<div class="text-base text-white"><?php echo $packageDescription; ?></div>
-            <!--p class="text-base text-gray-200">Licensed by the DMV, we have helped over 1 million drivers mask their traffic ticket. We electronic filing of your certificate at the DMV & court. The course is an open-book final exam with only 6 short chapters and 25 easy questions!</p-->
-            <!--ul class="text-sm mt-6 text-gray-200 grid gap-3">
+            <h2 class="text-3xl mb-4 md:pr-12 text-white">California Traffic School: Pass Guarantee, DMV Confirmation</h2>
+            <p class="text-base text-gray-200">Licensed by the DMV, we have helped over 1 million drivers mask their traffic ticket. We electronic filing of your certificate at the DMV & court. The course is an open-book final exam with only 6 short chapters and 25 easy questions!</p>
+            <ul class="text-sm mt-6 text-gray-200 grid gap-3">
               <li class="flex gap-1.5 pr-6">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-600 text-primary">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -512,205 +415,19 @@ global $current_user;
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                 </svg>
                 Plus, DMV Processed Verification = Our heroic support staff will monitor your ticket and confirm that it was successfully processed with the DMV and Court and will email you a confirmation number.</li>
-            </ul-->
+            </ul>
           </div>
           <dl class="space-y-6 border-t border-white border-opacity-20 px-4 py-6 sm:px-6 bg-white bg-opacity-10">
             <div class="flex items-center justify-between">
               <dt class="text-base font-medium text-white">Total</dt>
-              <dd class="text-base font-medium text-white">$<?php echo $packagePrice; ?></dd>
+              <dd class="text-base font-medium text-white">$34.85</dd>
             </div>
           </dl>
 
         </div>
       </div>
+    </form>
   </div>
 </div>
 
 <?php get_footer(); ?>
-
-<script>
-jQuery(document).ready(function($){
-
-	var $form;
-	$form = $("#payment-form");
-	$form.validate({
-				errorElement: 'span',
-				errorClass: 'invalid-feedback',
-				ignore: "",
-				highlight: function (element) {
-					$(element).addClass('is-invalid');
-				},
-				unhighlight: function(element) {
-					$(element).removeClass('is-invalid');
-				},
-				rules: {
-					"first-name": {
-						required: true,
-					},
-					"last-name": {
-						required: true,
-					},
-					"email": {
-						required: true,
-					},
-					"confirm_email": {
-						required: true,
-						equalTo: "#email",
-					},
-					"password": {
-						required: true,
-						minlength: 8,
-					},
-					"terms": {
-						required: true,
-					},
-				},
-				messages: {
-					"confirm_email": {
-						equalTo: "Emails addresses do not match.",
-					},
-					"password": {
-						minlength: "Please enter at least 8 characters.",
-					},
-				},
-	});
-	
-	$("#student-details-confirm").click(function(event){	
-	
-		event.preventDefault();
-
-		$form.validate();	
-		if($form.valid()){
-			
-			var firstname = $("#first-name").val();
-			var lastname = $("#last-name").val();
-			var email = $("#email").val();
-			var password = $("#password").val();
-			var dob = $("#dob").val();
-			var license_number = $("#license-number").val();
-			var license_state = $('#license-state option:selected').val();
-			
-			$.ajax({
-				  type: 'POST',
-				  url: "<?= admin_url('admin-ajax.php') ?>",
-				  data: { 
-							firstname: firstname,
-							lastname: lastname,
-							email: email,
-							password: password,
-							dob: dob,
-							license_number: license_number,
-							license_state: license_state,
-							action: 'register_user',
-						},
-				  dataType : 'json',
-				  success: function (response) {
-					  if(response.status == true){
-							$("#check_response").removeClass("custom-text-danger");
-							$("#check_response").addClass("custom-text-success");
-							$("#check_response").text("");
-							$("#check_response").text(response.message);
-							$("#progress-button-02").trigger("click");
-							return true;
-					  }else{
-							$("#check_response").removeClass("custom-text-success");
-							$("#check_response").addClass("custom-text-danger");
-							$("#check_response").text("");
-							$("#check_response").text(response.message);
-							return false
-					  }
-					 
-				  }
-			});
-			
-		}
-		
-	});
-
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  CollectJS.configure({
-    'callback': function (response) {
-						
-			var package_id = $("#package_id").val();
-			var school_id = $("#school_id").val();
-			var package_amount = $("#package_amount").val();
-			var certsoft_auth_token = $("#certsoft_auth_token").val();
-			
-			$("#payButton").html("Processing...");
-			
-			$.ajax({
-				  type: 'POST',
-				  url: "<?= admin_url('admin-ajax.php') ?>",
-				  data: { 
-							package_id: package_id,
-							school_id: school_id,
-							certsoft_auth_token: certsoft_auth_token,
-							package_amount: package_amount,
-							nmi_payment_token:  response.token,
-							action: 'checkout_process',
-						},
-				  dataType : 'json',
-				  success: function (response) {
-					  
-					  if(response.status == true){
-						    $("#payButton").html("Processing...");
-							$("#checkout_response").removeClass("custom-text-danger");
-							$("#checkout_response").addClass("custom-text-success");
-							$("#checkout_response").text("");
-							$("#checkout_response").text(response.message);
-							thankyouPage = window.location.pathname + '/payment-successful?txn_id='+response.transaction_id;
-							window.location.href= thankyouPage;
-							return true;
-					  }else{
-						    $("#payButton").html("Purchase Course <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-5 h-5'><path stroke-linecap='round' stroke-linejoin='round' d='M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z' /></svg>");
-							$("#checkout_response").removeClass("custom-text-success");
-							$("#checkout_response").addClass("custom-text-danger");
-							$("#checkout_response").text("");
-							$("#checkout_response").text(response.message);
-							return false
-					  }
-					 
-				  }
-			});
-
-		//console.log(response);
-    },
-    variant: 'inline',
-    googleFont: 'Abel',
-    invalidCss: {
-      color: '#ff0000'
-    },
-    validCss: {
-      color: '#14855F'
-    },
-    customCss: {
-      'border-color': 'rgb(0 0 0 / 25%)',
-      'border-style': 'solid',
-	  'border-width': '1px',
-	  'padding': '0.85rem',
-	  'font-size': '16px',
-	  'border-width': '1px',
-	  'height': '50px'
-    },
-    focusCss: {
-      'border-color': '#1CC48B',
-      'border-style': 'solid',
-      'border-width': '3px'
-    },
-    fields: {
-      cvv: {
-        placeholder: 'CVV'
-      },
-      ccnumber: {
-          placeholder: 'Credit Card'
-      },
-      ccexp: {
-          placeholder: 'MM / YY'
-      }
-    }
-  });
-});
-          
-</script>
