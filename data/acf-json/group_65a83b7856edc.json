@@ -84,6 +84,26 @@
                     "append": ""
                 },
                 {
+                    "key": "field_660b30bea3505",
+                    "label": "Certsoft Auth Token",
+                    "name": "certsoft_auth_token",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
                     "key": "field_65a83eca50618",
                     "label": "School State",
                     "name": "school_state",
@@ -285,5 +305,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1708025197
+    "modified": 1712009426
 }
