@@ -107,6 +107,25 @@ function payment_redirect_page_template ($template) {
 add_filter ('page_template', 'payment_redirect_page_template');
 
 /* ----------------------------------------
+ADD SIGNUP PAGE TEMPLATE 03
+------------------------------------------- */
+
+function signup_v3_page_template ($templates) {
+  $templates['page-stepped-signup-02.php'] = 'Stepped Traffic Signup New';
+  return $templates;
+}
+
+add_filter ('theme_page_templates', 'signup_v3_page_template');
+
+function singup_v3_redirect_page_template ($template) {
+  $post = get_post(); $page_template = get_post_meta( $post->ID, '_wp_page_template', true ); 
+  if ('page-stepped-signup-02.php' == basename ($page_template ))
+    $template = plugin_dir_path(__FILE__) . 'templates/page-stepped-signup-02.php';
+    return $template;
+  }
+add_filter ('page_template', 'singup_v3_redirect_page_template');
+
+/* ----------------------------------------
 ADD THANK YOU PAGE TEMPLATE 
 ------------------------------------------- */
 

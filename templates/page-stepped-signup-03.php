@@ -1,4 +1,4 @@
-<?php /* Template Name: Stepped Traffic Signup v2 */ ?>
+<?php /* Template Name: Stepped Traffic Signup v3 */ ?>
 
 <?php get_header(); ?>
 
