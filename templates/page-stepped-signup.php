@@ -8,7 +8,7 @@
 
   // Empty All Selections If Coming Back To The Form
   const hideRadio = () => {
-    let choices = document.getElementsByTagName('input');
+    let choices = document.getElementsByTagName('input'); 
     for(var i=0 ;i < choices.length; i++) {
       choices[i].checked = false;
     }
@@ -374,7 +374,9 @@ header.header__01, header.header__02, header.header__03, .cta-one, .cta-two, .to
     $('fieldset[data-step="03"] .next-button').click(function(e) {
       e.preventDefault();
       console.log(packageID);
-      idURL = window.location.origin + '/course/?view=signup&registration=discount&validation_code=' + packageID;
+      // idURL = window.location.origin + '/course/?view=signup&registration=discount&validation_code=' + packageID;
+
+      window.location.href = '/payment/?id=' + packageID;
      // alert(idURL);
       window.location.href = idURL;
     });
