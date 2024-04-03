@@ -7,7 +7,7 @@
       </div>
       <?php endwhile; endif; ?>
       <div class="font-semibold text-sm text-gray-700 hidden md:block"><?php echo get_field('school_name'); ?></div>
-      <div class="font-semibold text-xs md:text-sm text-gray-700">Returning Customer? <a href="<?php echo get_field('school_login_link'); ?>" class="text-blue-600 text-primary">Login</a></div>
+      <div class="font-semibold text-sm text-gray-700">Returning Customer? <a href="<?php echo get_field('school_login_link'); ?>" class="text-blue-600 text-primary">Login</a></div>
     </div>
   </div>
 </header>
@@ -31,12 +31,6 @@
     }
     .is-editable svg {
       color: <?php the_sub_field('school_primary_color'); ?>;
-    }
-    .border-primary, .selected {
-      outline: 2px solid <?php the_sub_field('school_primary_color'); ?>;
-    }
-    .selected .transition-colors {
-      background: <?php the_sub_field('school_primary_color'); ?>;
     }
   <?php endif; ?>
   <?php endwhile; endif; ?>
