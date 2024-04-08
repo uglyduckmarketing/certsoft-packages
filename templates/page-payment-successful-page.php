@@ -42,28 +42,27 @@ $created_at = isset($transaction->created_at) ? $transaction->created_at : '';
 
   <fieldset id="step-01" data-step="01">
     
-    <div class="mb-7">
+    <div class="mb-7 text-center">
     <div>
-      <span class="text-blue-600 text-xs mb-2 font-semibold block">Thank You</span>
-      <h2 class="block mb-4 text-2xl font-semibold tracking-tight">Your payment has been received successfully.</h2>
+      <h2 class="block mb-4 text-2xl font-semibold tracking-tight mt-6">Your payment has been received successfully.</h2>
       <p class="text-gray-700 text-base md:text-lg mb-12 md:mb-0">This is to inform you that we have <span class="px-2 py-1 bg-blue-50 rounded-md text-base font-semibold text-blue-600">"Received The Payment Successfully"</span> for the buying package. You can find the transaction details below related to your purchase.</p>
     </div>
   </div>
     
     <div class="-space-y-px rounded-md bg-white">
 
-      <label class="relative flex cursor-pointer border p-4 focus:outline-none">
+      <label class="relative flex border p-4 focus:outline-none receipt">
         <span class="ml-3 flex flex-col">
-          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Firstname : <?php echo $user_firstname; ?></div>
-          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Lastname : <?php echo $user_lastname; ?></div>
-          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Email : <?php echo $user_email; ?></div>
-          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Package ID : <?php echo $package_id; ?></div>
-          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Package Amount : <?php echo $package_amount; ?></div>
-          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">School ID : <?php echo $school_id; ?></div>
-          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Date of Birth : <?php echo $drivers_license_dob; ?></div>
-          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">License Number : <?php echo $drivers_license_number; ?></div>
-          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">License State : <?php echo $drivers_license_state; ?></div>
-		  <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Transaction ID : <?php echo $transaction_id; ?></div>
+          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">First Name: <?php echo $user_firstname; ?></div>
+          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Last Name: <?php echo $user_lastname; ?></div>
+          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Email Address: <?php echo $user_email; ?></div>
+          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Package ID: <?php echo $package_id; ?></div>
+          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Package Amount: <?php echo $package_amount; ?></div>
+          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">School ID: <?php echo $school_id; ?></div>
+          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Date of Birth: <?php echo $drivers_license_dob; ?></div>
+          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">License Number: <?php echo $drivers_license_number; ?></div>
+          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">License State: <?php echo $drivers_license_state; ?></div>
+		  <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Transaction ID: <?php echo $transaction_id; ?></div>
           <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Payment Status : <span class="ml-2 px-2 py-1 bg-blue-50 rounded-md text-base font-semibold text-blue-600"><?php echo $payment_status; ?></span></div>
           <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Date : <?php echo $created_at; ?></div>
         </span>
@@ -72,8 +71,10 @@ $created_at = isset($transaction->created_at) ? $transaction->created_at : '';
     </div>
 	
   <div class="mt-12">
+	  
+	  <? // ?payment_token= ?>
     
-    <a target="_blank" href="<?php echo get_site_url()."?payment_token=".$nmi_payment_token; ?>">
+    <a target="_blank" href="<?php echo get_site_url()."/course/?view=login&payment_token=".$nmi_payment_token; ?>">
 		<button class="faq-button bg-primary rounded-full py-2 px-4 text-white text-sm font-semibold flex items-center md:mb-0 mx-auto z-50 gap-2">Access Account <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
 		  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
 		</svg>
@@ -91,6 +92,19 @@ $created_at = isset($transaction->created_at) ? $transaction->created_at : '';
 	.header__01, footer {
 		display: none;
 	}	
+.receipt {
+    background: #f8f8f8;
+    padding: 1rem 1rem 2rem;
+    --mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 30px 100%;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    width: 400px;
+    text-align: center !important;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+	border: none;
+}
 </style>
 
 <?php get_footer(); ?>

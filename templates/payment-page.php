@@ -157,7 +157,7 @@ global $current_user;
 	    <input type="hidden" value="<?php echo $packageID; ?>" name="package_id" class="package_id" id="package_id">
 		<input type="hidden" value="<?php echo $packagePrice; ?>" name="package_amount" class="package_amount" id="package_amount">
 	<?php } else {
-		     die('Package ID missing!!!');
+		     die('Package ID missing');
 	      } 
 	?>
 	
@@ -184,7 +184,7 @@ global $current_user;
             Create Account
           </button>
           <button class="progress-button" id="progress-button-02">
-            Payment
+            Payment Details
           </button>
           <button class="progress-button" id="progress-button-03">
             Ticket Information
@@ -315,7 +315,7 @@ global $current_user;
                 <option <?php if($drivers_license_state == 'AK') echo "selected"; ?> value="AK">Alaska</option>
                 <option <?php if($drivers_license_state == 'AZ') echo "selected"; ?> value="AZ">Arizona</option>
                 <option <?php if($drivers_license_state == 'AR') echo "selected"; ?> value="AR">Arkansas</option>
-                <option <?php if($drivers_license_state == 'CA') echo "selected"; ?> value="CA">California</option>
+                <option <?php if($drivers_license_state == 'CA') echo "selected"; ?> value="CA" selected>California</option>
                 <option <?php if($drivers_license_state == 'CO') echo "selected"; ?> value="CO">Colorado</option>
                 <option <?php if($drivers_license_state == 'CT') echo "selected"; ?> value="CT">Connecticut</option>
                 <option <?php if($drivers_license_state == 'DE') echo "selected"; ?> value="DE">Delaware</option>
@@ -372,8 +372,8 @@ global $current_user;
 
             <div class="flex mx-auto gap-2 h-6 items-center col-span-4 mt-4">
               <div class="flex items-center gap-2">
-                <input id="terms" name="terms" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" required>
-                <span class="block text-sm font-medium text-gray-700">I Accept The <button class="text-primary" id="terms-trigger">Terms & Conditions</button></span>
+                <input id="terms" name="terms" type="checkbox" checked class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600" required>
+                <span class="block text-sm font-medium text-gray-700">I Accept The <button class="text-primary" id="terms-trigger">Terms &amp; Conditions</button></span>
               </div>
             </div>
 
@@ -381,7 +381,13 @@ global $current_user;
 			
             <div class="mt-6 col-span-4">
 			<?php if(get_current_user_id()){ ?>
-              <div id="check_response" class="custom-text-success col-span-4 mt-2">Student details captured already. Proceed to payment step to purchase course.</div>
+              <div id="check_response" class="custom-text-success col-span-4 mt-2 text-center mb-4 text-sm">You're already logged in, please fill out any aditional fields and proceed to payment to purchase course.</div>
+              <button id="student-details-confirm" class="w-full rounded-md border border-transparent bg-blue-600 px-4 py-3 text-base font-medium text-gray-900 shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-50 flex gap-4 items-center justify-center bg-primary">
+                Next Step
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>
+              </button>
 			<?php } else { ?>
               <button id="student-details-confirm" class="w-full rounded-md border border-transparent bg-blue-600 px-4 py-3 text-base font-medium text-gray-900 shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-50 flex gap-4 items-center justify-center bg-primary">
                 Next Step
@@ -462,7 +468,7 @@ global $current_user;
             </div>
 
             <div class="col-span-2">
-              <label for="expiration-date">Expiration Date (MM/YY) <span class="text-red-500">*</span></label>
+              <label for="expiration-date">Expiration (MM/YY) <span class="text-red-500">*</span></label>
               <div class="mt-1">
                 <div id="ccexp"></div>
               </div>
@@ -478,7 +484,7 @@ global $current_user;
             <div id="checkout_response" class="col-span-4 mt-2"></div>
             <div class="border-t border-gray-300 col-span-4 pt-4">
               <button id="payButton" name="form-submit" class="w-full rounded-md border border-transparent bg-blue-600 px-4 py-3 text-base font-medium text-gray-900 shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-50 flex gap-4 items-center justify-center bg-primary">
-                Purchase Course
+                $<?php echo $packagePrice; ?> <span style="width: 1px; height: 20px; background: rgba(255,255,255,.4);"></span> Purchase Course
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                 </svg>
@@ -495,10 +501,10 @@ global $current_user;
       <!-- Order summary -->
       <div class="-order-1">
 
-        <div class="md:rounded-lg shadow-sm sticky md:top-6 course-details">
+        <div class="md:rounded-lg shadow-sm md:top-6 course-details">
           <div class="course-info">
             <span class="mb-4 mt-2 text-gray-900 text-xs block package-eyebrow">Selected Package</span>
-            <h2 class="text-3xl mb-4 md:pr-12 text-gray-900 font-semibold tracking-tight"><?php echo $packageTitle; ?></h2>
+            <h2 class="text-2xl md:text-3xl mb-4 md:pr-12 text-gray-900 font-semibold tracking-tight"><?php echo $packageTitle; ?></h2>
 			      <div class="text-base text-gray-900"><?php echo $packageDescription; ?></div>
           </div>
           <dl class="space-y-6 border-opacity-20 px-4 py-6 sm:px-6 bg-white bg-opacity-10 price-box">
@@ -508,11 +514,23 @@ global $current_user;
             </div>
           </dl>
         </div>
+		<div class="block mt-12 text-gray-700">
+			<a href="<?php bloginfo('url'); ?>/get-started/" class="text-sm gap-2 flex items-center">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+				  <path fill-rule="evenodd" d="M12.5 9.75A2.75 2.75 0 0 0 9.75 7H4.56l2.22 2.22a.75.75 0 1 1-1.06 1.06l-3.5-3.5a.75.75 0 0 1 0-1.06l3.5-3.5a.75.75 0 0 1 1.06 1.06L4.56 5.5h5.19a4.25 4.25 0 0 1 0 8.5h-1a.75.75 0 0 1 0-1.5h1a2.75 2.75 0 0 0 2.75-2.75Z" clip-rule="evenodd" />
+				</svg>
+				Edit Package</a>
+		  </div>
       </div>
   </div>
 </div>
 	
 <style>
+	@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+	html, body {
+		font-family: 'Poppins', sans-serif !important;
+	}
 	.header__01, footer {
 		display: none;
 	}	
@@ -521,6 +539,8 @@ global $current_user;
     border: 1px solid rgba(0,0,0,.1);
     position: relative;
     overflow: hidden;
+/* 	position: sticky;
+    top: 2rem; */
   }
   .course-info {
     padding: 2rem;
@@ -569,6 +589,17 @@ global $current_user;
     transform: translateY(-50%);
     left: 0;
   }
+	@media(max-width: 992px) {
+		.payment-form .progress-bar {
+			transform: translateY(-12px);
+		}
+		.payment-form {
+			padding-bottom: 1rem;
+		}
+		.course-info {
+			padding: 1.5rem;
+		}
+	}
 </style>
 
 <?php get_footer(); ?>
@@ -709,7 +740,7 @@ document.addEventListener('DOMContentLoaded', function () {
 							window.location.href= thankyouPage;
 							return true;
 					  }else{
-						    $("#payButton").html("Purchase Course <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-5 h-5'><path stroke-linecap='round' stroke-linejoin='round' d='M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z' /></svg>");
+						    $("#payButton").html("Purchase Course <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-5 h-5'><path stroke-linecap='round' stroke-linejoin='round' d='M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z' /></svg>" );
 							$("#checkout_response").removeClass("custom-text-success");
 							$("#checkout_response").addClass("custom-text-danger");
 							$("#checkout_response").text("");
