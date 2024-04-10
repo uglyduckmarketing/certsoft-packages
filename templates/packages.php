@@ -401,7 +401,7 @@ $packages = array(
         'packageItems' => '["1","4","5","6"]'
     ),
     18 => array(
-        'packageID' => 0,
+        'packageID' => 18,
         'courseID' => 1,
         'packageTitle' => 'California Traffic School + Pass Guarantee',
         'packageDescription' => '
@@ -444,17 +444,18 @@ $packages = array(
     20 => array(
         'packageID' => 20,
         'courseID' => 1,
-        'packageTitle' => 'California Traffic School: Pass Guarantee, DMV Confirmation ',
+        'packageTitle' => 'California Traffic School: Pass Guarantee, DMV Confirmation, Instant Processing',
         'packageDescription' => '
         <p> Licensed by the DMV, we have helped over 300,000 drivers mask their traffic ticket. We electronic filing of your certificate at the DMV &amp; court. The course is an open-book final exam with only 6 short chapters and 25 easy questions!</p>
             <ul>
                 <li>Plus, Guaranteed Pass Policy</strong> = Take it until you pass for free. NO additional fees required. We will notify the DMV &amp; Court of Completion INSTANTLY.&nbsp;</li>
                 <li>Plus, DMV Processed Verification</strong> = Our heroic support staff will monitor your ticket and confirm that it was successfully processed with the DMV and Court and will email you a confirmation number.</li>
+                 <li>Plus, Instant Processing = We will process your certificate instantly 24/7 365 days a year with the DMV.</li>
             </ul>
             <small></small>',
         'packageDisclaimer' => '',
         'packageSlug' => 'package_California Traffic School: Pass Guarantee, DMV Confi',
-        'packagePrice' => '33.85',
+        'packagePrice' => '43.80',
         'packageClass' => 'recommended',
         'packageImage' => 'onemplecom',
         'packageCategory' => 1,
@@ -524,8 +525,8 @@ $packages = array(
         'packageActive' => 1,
         'packageItems' => '["4","5","6"]'
     ),
-    23 => array(
-        'packageID' => 23,
+    24 => array(
+        'packageID' => 24,
         'courseID' => 1,
         'packageTitle' => 'California Traffic School + Instant Processing',
         'packageDescription' => '
