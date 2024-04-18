@@ -53,15 +53,9 @@ $created_at = isset($transaction->created_at) ? $transaction->created_at : '';
 
       <label class="relative flex border p-4 focus:outline-none receipt">
         <span class="ml-3 flex flex-col">
-          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">First Name: <?php echo $user_firstname; ?></div>
-          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Last Name: <?php echo $user_lastname; ?></div>
+          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Student Name: <?php echo $user_firstname; ?> <?php echo $user_lastname; ?></div>
           <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Email Address: <?php echo $user_email; ?></div>
-          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Package ID: <?php echo $package_id; ?></div>
           <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Package Amount: <?php echo $package_amount; ?></div>
-          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">School ID: <?php echo $school_id; ?></div>
-          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Date of Birth: <?php echo $drivers_license_dob; ?></div>
-          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">License Number: <?php echo $drivers_license_number; ?></div>
-          <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">License State: <?php echo $drivers_license_state; ?></div>
 		  <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Transaction ID: <?php echo $transaction_id; ?></div>
           <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Payment Status : <span class="ml-2 px-2 py-1 bg-blue-50 rounded-md text-base font-semibold text-blue-600"><?php echo $payment_status; ?></span></div>
           <div class="block pb-4 text-md font-semibold tracking-tight flex items-center">Date : <?php echo $created_at; ?></div>
@@ -74,7 +68,7 @@ $created_at = isset($transaction->created_at) ? $transaction->created_at : '';
 	  
 	  <? // ?payment_token= ?>
     
-    <a target="_blank" href="<?php echo get_site_url()."/course/?view=login&payment_token=".$nmi_payment_token; ?>">
+    <a target="_blank" href="<?php echo get_site_url()."/course/?view=login&login_token=".$nmi_payment_token; ?>">
 		<button class="faq-button bg-primary rounded-full py-2 px-4 text-white text-sm font-semibold flex items-center md:mb-0 mx-auto z-50 gap-2">Access Account <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
 		  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
 		</svg>

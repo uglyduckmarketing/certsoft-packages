@@ -45,7 +45,7 @@ function cs_enqueue() {
   wp_enqueue_script( 'cs-js-jquery', plugin_dir_url( __FILE__ ) . 'js/jquery.min.js');
   wp_enqueue_script( 'cs-js-validate', plugin_dir_url( __FILE__ ) . 'js/jquery.validate.min.js');
   wp_enqueue_script( 'cs-js-app', plugin_dir_url( __FILE__ ) . 'js/app.js', array(), '1.0.0', true );
-  echo '<script src="https://secure.pswwgateway.com/token/Collect.js" data-tokenization-key="ASf7jR-Z38WcP-RkX3VV-dgmRQr" data-variant="inline"></script>';
+  echo '<script src="https://secure.pswwgateway.com/token/Collect.js" data-tokenization-key="' . get_field('tokenization_key', 'options') . '" data-variant="inline"></script>';
 }
 add_action( 'wp_enqueue_scripts', 'cs_enqueue' );
 
@@ -317,7 +317,7 @@ function checkout_process(){
 			//merchant_defined_field_7 = school_id
 			//website = $website_url
 			
-			$postData = array('security_key' => 'fzJ6c3Zze68ExXwa3qK87AMy8yB7CVG4',
+			$postData = array('security_key' => get_field('payment_token', 'options'),
 						  'type' => 'sale',
 						  'amount' => $package_amount,
 						  'payment_token' => $nmi_payment_token,
@@ -336,7 +336,8 @@ function checkout_process(){
 						  'merchant_defined_field_4' => $drivers_license_number,
 						  'merchant_defined_field_5' => $drivers_license_state,
 						  'merchant_defined_field_6' => $package_id,
-						  'merchant_defined_field_7' => $school_id
+						  'merchant_defined_field_7' => $school_id,
+						  'order_description' => $package_title
 						);
 									
 			$values = [];
@@ -736,3 +737,95 @@ add_action( 'acf/init', function() {
 	'updated_message' => 'Certsoft Options Updated',
 ) );
 } );
+
+add_action( 'acf/include_fields', function() {
+	if ( ! function_exists( 'acf_add_local_field_group' ) ) {
+		return;
+	}
+
+	acf_add_local_field_group( array(
+	'key' => 'group_661ffc035be1c',
+	'title' => 'Tokens',
+	'fields' => array(
+		array(
+			'key' => 'field_661ffc02b3077',
+			'label' => 'Payment Token',
+			'name' => 'payment_token',
+			'aria-label' => '',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'maxlength' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+		),
+		array(
+			'key' => 'field_66200005b3078',
+			'label' => 'Tokenization Key',
+			'name' => 'tokenization_key',
+			'aria-label' => '',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'maxlength' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+		),
+		array(
+			'key' => 'field_6621417f3b313',
+			'label' => 'Disable Apple Pay',
+			'name' => 'disable_apple_pay',
+			'aria-label' => '',
+			'type' => 'true_false',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'message' => '',
+			'default_value' => 0,
+			'ui_on_text' => '',
+			'ui_off_text' => '',
+			'ui' => 1,
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'options_page',
+				'operator' => '==',
+				'value' => 'certsoft-options',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => true,
+	'description' => '',
+	'show_in_rest' => 0,
+) );
+} );
+

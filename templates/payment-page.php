@@ -239,7 +239,7 @@ global $current_user;
 
           <div class="step-heading flex justify-between items-center">
             <div>
-              <span class="text-primary text-xs mb-2 block font-semibold">Step 01.</span>
+              <span class="text-primary text-xs mb-2 block font-semibold">Create Account</span>
               <h2 class="text-2xl md:text-3xl font-medium text-gray-900 block mb-6">Student Details</h2>
             </div>
             <button id="step-01-edit">
@@ -422,6 +422,7 @@ global $current_user;
 
 
           <div class="step-02-container">
+			 <?php if(empty(get_field('disable_apple_pay', 'options'))) : ?>
           <div>
             <button type="button" class="flex w-full items-center justify-center rounded-md border border-transparent bg-black py-3 text-gray-900 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 apple-button">
             <span class="sr-only">Pay with Apple Pay</span>
@@ -439,6 +440,8 @@ global $current_user;
             <span class="bg-white px-4 text-sm font-medium text-gray-500">or</span>
           </div>
         </div>
+			  
+	  <?php endif; ?>
 
         
         <div class="mt-6 grid grid-cols-4 gap-x-4 gap-y-3">
@@ -505,7 +508,7 @@ global $current_user;
           <div class="course-info">
             <span class="mb-4 mt-2 text-gray-900 text-xs block package-eyebrow">Selected Package</span>
             <h2 class="text-2xl md:text-3xl mb-4 md:pr-12 text-gray-900 font-semibold tracking-tight"><?php echo $packageTitle; ?></h2>
-			      <div class="text-base text-gray-900"><?php echo $packageDescription; ?></div>
+			      <div class="text-base text-gray-900 package-description"><?php echo $packageDescription; ?></div>
           </div>
           <dl class="space-y-6 border-opacity-20 px-4 py-6 sm:px-6 bg-white bg-opacity-10 price-box">
             <div class="flex items-center justify-between">
@@ -515,7 +518,7 @@ global $current_user;
           </dl>
         </div>
 		<div class="block mt-12 text-gray-700">
-			<a href="<?php bloginfo('url'); ?>/get-started/" class="text-sm gap-2 flex items-center">
+			<a href="<?php bloginfo('url'); ?>/get-started/" class="text-sm gap-2 flex items-center edit-package">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
 				  <path fill-rule="evenodd" d="M12.5 9.75A2.75 2.75 0 0 0 9.75 7H4.56l2.22 2.22a.75.75 0 1 1-1.06 1.06l-3.5-3.5a.75.75 0 0 1 0-1.06l3.5-3.5a.75.75 0 0 1 1.06 1.06L4.56 5.5h5.19a4.25 4.25 0 0 1 0 8.5h-1a.75.75 0 0 1 0-1.5h1a2.75 2.75 0 0 0 2.75-2.75Z" clip-rule="evenodd" />
 				</svg>
@@ -598,6 +601,9 @@ global $current_user;
 		}
 		.course-info {
 			padding: 1.5rem;
+		}
+		.package-description, .edit-package {
+			display: none;
 		}
 	}
 </style>
