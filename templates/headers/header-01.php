@@ -1,3 +1,5 @@
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
 <header class="border-b border-gray-200 bg-white">
   <div class="container mx-auto py-4 px-6">
     <div class="flex gap-1 md:gap-4 items-center justify-between">
