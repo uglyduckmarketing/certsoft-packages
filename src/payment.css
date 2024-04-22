@@ -115,7 +115,7 @@
 }
 .payment-form .progress-bar {
   height: 6px;
-  width: 8%;
+  width: 10.25%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -156,4 +156,11 @@
 
 .payment-form #terms {
   width: auto;
+}
+
+@media (max-width: 992px) {
+  .package-description,
+  .edit-package {
+    display: none;
+  }
 }

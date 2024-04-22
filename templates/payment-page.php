@@ -507,7 +507,17 @@ global $current_user;
         <div class="md:rounded-lg shadow-sm md:top-6 course-details">
           <div class="course-info">
             <span class="mb-4 mt-2 text-gray-900 text-xs block package-eyebrow">Selected Package</span>
-            <h2 class="text-2xl md:text-3xl mb-4 md:pr-12 text-gray-900 font-semibold tracking-tight"><?php echo $packageTitle; ?></h2>
+            <h2 class="text-2xl md:text-3xl mb-4 md:pr-12 text-gray-900 font-semibold tracking-tight hidden md:block"><?php echo $packageTitle; ?></h2>
+			  <div class="md:hidden package-description-toggle">
+				  
+			  <h2 class="text-lg text-gray-900 font-semibold tracking-tight flex justify-between gap-4 md:hidden details-trigger">
+				<?php echo $packageTitle; ?>
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+				  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+				</svg>
+			  </h2>
+			  </div>
+			  <span class="text-xs text-gray-500 font-medium md:hidden">View Details</span>
 			      <div class="text-base text-gray-900 package-description"><?php echo $packageDescription; ?></div>
           </div>
           <dl class="space-y-6 border-opacity-20 px-4 py-6 sm:px-6 bg-white bg-opacity-10 price-box">
@@ -580,6 +590,12 @@ global $current_user;
   .payment-form {
     padding-bottom: 3rem;
   }
+	.details-trigger svg {
+		transition: all .3s ease;
+	}
+	.rotate-icon {
+		transform: rotate(180deg);
+	}
   .course-info li::before {
     content: '';
     width: 20px;
@@ -612,6 +628,12 @@ global $current_user;
 
 <script>
 jQuery(document).ready(function($){
+	
+	$('.package-description-toggle').click(function(e) {
+		e.preventDefault();
+		$('.package-description').slideToggle();
+		$('.package-description-toggle svg').toggleClass('rotate-icon');
+	})
 
 	var $form;
 	$form = $("#payment-form");
