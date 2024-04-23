@@ -81,7 +81,7 @@ global $current_user;
               <h3 class="text-xl font-semibold leading-6 text-gray-900" id="modal-title">Terms &amp; Conditions</h3>
               <div class="mt-2">
                 <div class="text-sm text-gray-500 h-60 overflow-scroll py-4">
-                  Go To <?php echo do_shortcode('[company_name]'); ?> Terms of Service
+                  <?php echo do_shortcode('[company_name]'); ?> Terms of Service
                   <br /><br />
                   I certify under penalty of perjury that I alone will study the Go To <?php echo do_shortcode('[company_name]'); ?> course materials, take the quizzes and final exam without any outside assistance. I understand that if it is determined that I have not completed Go To <?php echo do_shortcode('[company_name]'); ?> without outside assistance, make false statements or present falsified documents to the court or Go To <?php echo do_shortcode('[company_name]'); ?>, this may be a felony and the completion certificate will not be accepted and I will receive no refund. I have reviewed the list of licensed traffic schools and understand that Go To <?php echo do_shortcode('[company_name]'); ?> is a DMV Licensed traffic school for the state of California in the English Language Only. I certify that I have a valid drivers license and am eligible for traffic school.
                   <br /><br />
