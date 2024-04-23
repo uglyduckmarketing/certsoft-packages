@@ -5,22 +5,22 @@ get_header();
 
 include plugin_dir_path(__FILE__) . 'headers/header-01.php';
 
-if( !isset($_GET['txn_id']) || empty($_GET['txn_id']) ) {
-	die('Transaction ID missing!!!');
-}
+// if( !isset($_GET['txn_id']) || empty($_GET['txn_id']) ) {
+// 	die('Transaction ID missing!!!');
+// }
 
 $transaction_id = $_GET['txn_id'];
 $transaction = get_transaction_details($transaction_id);
 
 $packagePrice = isset($package_details->packagePrice) ? $package_details->packagePrice : null;
 if( !isset($transaction->transaction_id) || empty($transaction->transaction_id) ) {
-	die('Invalid Transaction ID missing!!!');
+	die('Invalid Transaction ID missing!');
 }
 
 // Delete user account if they paid successfully
 if($transaction->user_id) {
-require_once( ABSPATH.'wp-admin/includes/user.php' );
-wp_delete_user( $transaction->user_id );
+  require_once( ABSPATH.'wp-admin/includes/user.php' );
+  wp_delete_user( $transaction->user_id );
 }
 	
 $user_firstname = isset($transaction->user_firstname) ? $transaction->user_firstname : '';
@@ -87,16 +87,16 @@ $created_at = isset($transaction->created_at) ? $transaction->created_at : '';
 		display: none;
 	}	
 .receipt {
-    background: #f8f8f8;
-    padding: 1rem 1rem 2rem;
-    --mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 30px 100%;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
-    width: 400px;
-    text-align: center !important;
-    justify-content: center;
-    margin: 0 auto;
-    padding-top: 2rem;
+  background: #f8f8f8;
+  padding: 1rem 1rem 2rem;
+  --mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 30px 100%;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  width: 400px;
+  text-align: center !important;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 2rem;
 	border: none;
 }
 </style>
