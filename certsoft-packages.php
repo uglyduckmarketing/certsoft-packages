@@ -3,7 +3,7 @@
 Plugin Name: Certsoft Packages
 Description: Add the Certsoft signup and payments.
 Author: Matt Lewis
-Version: 1.1.8
+Version: 1.1.9
 */
 
 function certsoft_plugin_activation()
@@ -363,7 +363,7 @@ function checkout_process(){
 		
 			curl_close($curl);
 		
-			if($values && $values['response'] == 1 && $values['responsetext'] == 'SUCCESS'){
+			if($values && $values['response'] == 1 && ($values['responsetext'] == 'SUCCESS' || $values['responsetext'] == 'Approved')){
 				
 				$transaction_id = $values['transactionid'];
 				
@@ -394,6 +394,7 @@ function checkout_process(){
 					die;
 			}else{
 				echo json_encode(['status' => false, 'message' => $values['responsetext']]);
+  			//echo json_encode($values);
 				die;
 			}
 			

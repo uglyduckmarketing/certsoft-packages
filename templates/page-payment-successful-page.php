@@ -4,10 +4,6 @@
 get_header();
 
 include plugin_dir_path(__FILE__) . 'headers/header-01.php';
-require_once plugin_dir_path(__FILE__) . 'packages.php';
-
-// Included from packages.php
-$package_details = $packages;
 
 if( !isset($_GET['txn_id']) || empty($_GET['txn_id']) ) {
 	die('Transaction ID Missing');
@@ -17,8 +13,9 @@ $transaction_id = $_GET['txn_id'];
 $transaction = get_transaction_details($transaction_id);
 
 $packagePrice = isset($package_details->packagePrice) ? $package_details->packagePrice : null;
+
 if( !isset($transaction->transaction_id) || empty($transaction->transaction_id) ) {
-	die('Package Details Missing');
+	die('Transaction Details Missing');
 }
 
 // Delete user account if they paid successfully
