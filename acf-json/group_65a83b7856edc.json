@@ -185,6 +185,33 @@
                     "default_value": "",
                     "enable_opacity": 0,
                     "return_format": "string"
+                },
+                {
+                    "key": "field_66679d2ee6a1e",
+                    "label": "School Type",
+                    "name": "school_type",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Traffic School": "Traffic School",
+                        "Boating School": "Boating School",
+                        "Notary": "Notary"
+                    },
+                    "default_value": "Traffic School",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
                 }
             ]
         },
@@ -305,5 +332,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718066279
+    "modified": 1718066531
 }
