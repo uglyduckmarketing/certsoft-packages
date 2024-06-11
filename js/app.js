@@ -21,31 +21,6 @@ const studentDetailsConfirmation = document.getElementById(
   "student-details-confirm"
 );
 
-confirmEmailAddress.addEventListener("blur", function () {
-  if (emailAddress.value !== confirmEmailAddress.value) {
-    alert("Emails addresses do not match.");
-  }
-});
-
-studentDetailsConfirmation.addEventListener("click", function (e) {
-  if (
-    termsCheckbox.checked &&
-    emailAddress.value === confirmEmailAddress.value &&
-    lastName.value &&
-    firstName.value &&
-    password.value
-  ) {
-    e.preventDefault();
-    // window.scroll({top: 0, left: 0, behavior: 'smooth'});
-    document.getElementById("step-01").classList.toggle("is-editable");
-    document.getElementById("step-02").classList.toggle("is-editable");
-    document
-      .getElementById("progress-button-02")
-      .classList.toggle("active-progress");
-    progressBar.style.width = "34.5%";
-  }
-});
-
 /* Open Modal */
 
 termsTrigger.addEventListener("click", function (e) {

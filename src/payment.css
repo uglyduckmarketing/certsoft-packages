@@ -157,3 +157,9 @@
 .payment-form #terms {
   width: auto;
 }
+
+@media(max-width: 992px) {
+	.package-description, .edit-package {
+		display: none;
+	}
+}
