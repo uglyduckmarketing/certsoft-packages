@@ -13,7 +13,7 @@ $packages = array(
             </ul>',
         'packageDisclaimer' => '',
         'packageSlug' => 'package_Basic - Traffic Violator School Online',
-        'packagePrice' => '24.95',
+        'packagePrice' => '34.95',
         'packageClass' => '',
         'packageImage' => '',
         'packageCategory' => 1,
