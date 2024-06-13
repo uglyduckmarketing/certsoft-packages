@@ -12,7 +12,7 @@ $packages = array(
             <li></i>Proof of Purchase</li>
             <li></i>Free Completion Certificate</li>
             </ul>
-            <small>*This Package&nbsp;does not&nbsp;provide the added benefit of Expedited Processing, Insurance/Employer Certificate, Unlimited Course Attempts, or DMV &amp; Court Confirmation Notification Numbers.</small>',
+            <small>This Package&nbsp;does not&nbsp;provide the added benefit of Expedited Processing, Insurance/Employer Certificate, Unlimited Course Attempts, or DMV &amp; Court Confirmation Notification Numbers.</small>',
         'packageDisclaimer' => '',
         'packageSlug' => 'package_Basic - Traffic Violator School Online',
         'packagePrice' => '24.95',
@@ -408,8 +408,7 @@ $packages = array(
          <p>Licensed by the DMV, we have helped over 300,000 drivers mask their traffic ticket. We electronic filing of your certificate at the DMV &amp; court. The course is an open-book final exam with only 6 short chapters and 25 easy questions!</p>
          <ul>
          <li>><strong>Plus, Guaranteed Pass Policy</strong> = Take it until you pass for free. NO additional fees required. We will notify the DMV &amp; Court of Completion INSTANTLY</li>
-         </ul>
-            <small></small>',
+         </ul>',
         'packageDisclaimer' => '',
         'packageSlug' => 'package_California Traffic School + Pass Guarantee',
         'packagePrice' => '29.90',
@@ -429,8 +428,7 @@ $packages = array(
             <ul>
                 <li><strong>Plus, Guaranteed Pass Policy</strong> = Take it until you pass for free. NO additional fees required. We will notify the DMV &amp; Court of Completion INSTANTLY.&nbsp;</li>
                 <li><strong>Plus, DMV Processed Verification</strong> = Our heroic support staff will monitor your ticket and confirm that it was successfully processed with the DMV and Court and will email you a confirmation number.</li>
-            </ul>
-            <small></small>',
+            </ul>',
         'packageDisclaimer' => '',
         'packageSlug' => 'package_California Traffic School: Pass Guarantee, DMV Confi',
         'packagePrice' => '33.85',
@@ -451,8 +449,7 @@ $packages = array(
                 <li>Plus, Guaranteed Pass Policy</strong> = Take it until you pass for free. NO additional fees required. We will notify the DMV &amp; Court of Completion INSTANTLY.&nbsp;</li>
                 <li>Plus, DMV Processed Verification</strong> = Our heroic support staff will monitor your ticket and confirm that it was successfully processed with the DMV and Court and will email you a confirmation number.</li>
                  <li>Plus, Instant Processing = We will process your certificate instantly 24/7 365 days a year with the DMV.</li>
-            </ul>
-            <small></small>',
+            </ul>',
         'packageDisclaimer' => '',
         'packageSlug' => 'package_California Traffic School: Pass Guarantee, DMV Confi',
         'packagePrice' => '43.80',
@@ -472,8 +469,7 @@ $packages = array(
             <ul>
                 <li><strong>Plus, Guaranteed Pass Policy</strong> = Take it until you pass for free. NO additional fees required. We will notify the DMV &amp; Court of Completion INSTANTLY.&nbsp;</li>
                 <li><strong>Plus, Instant Processing</strong> = We will process your certificate instantly 24/7 365 days a year with the DMV.</li>
-            </ul>
-            <small></small>',
+            </ul>',
         'packageDisclaimer' => '',
         'packageSlug' => 'package_California Traffic School: Pass Guarantee, Instant P',
         'packagePrice' => '39.85',
@@ -492,8 +488,7 @@ $packages = array(
         <p> Licensed by the DMV, we have helped over 300,000 drivers mask their traffic ticket. We electronic filing of your certificate at the DMV &amp; court. The course is an open-book final exam with only 6 short chapters and 25 easy questions!</p>
             <ul>
                 <li><strong>Plus, DMV Processed Verification</strong> = Our heroic support staff will monitor your ticket and confirm that it was successfully processed with the DMV and Court and will email you a confirmation number.</li>
-            </ul>
-            <small></small>',
+            </ul>',
         'packageDisclaimer' => '',
         'packageSlug' => 'package_California Traffic School + DMV Confirmation ',
         'packagePrice' => '28.90',
@@ -513,8 +508,7 @@ $packages = array(
             <ul>
                 <li><strong>Plus, DMV Processed Verification</strong> = Our heroic support staff will monitor your ticket and confirm that it was successfully processed with the DMV and Court and will email you a confirmation number.</li>
                 <li><strong>Plus, Instant Processing</strong> = We will process your certificate instantly 24/7 365 days a year with the DMV.</p>
-                </ul>
-            <small></small>',
+                </ul>',
         'packageDisclaimer' => '',
         'packageSlug' => 'package_California Traffic School: DMV Confirmation, Instant',
         'packagePrice' => '38.85',
@@ -533,8 +527,7 @@ $packages = array(
         <p> Licensed by the DMV, we have helped over 300,000 drivers mask their traffic ticket. We electronic filing of your certificate at the DMV &amp; court. The course is an open-book final exam with only 6 short chapters and 25 easy questions!</p>
             <ul>
                 <li><strong>Plus, Instant Processing</strong> = We will process your certificate instantly 24/7 365 days a year with the DMV.</p>
-                </ul>
-            <small></small>',
+                </ul>',
         'packageDisclaimer' => '',
         'packageSlug' => 'package_California Traffic School + Instant Processing',
         'packagePrice' => '34.95',
