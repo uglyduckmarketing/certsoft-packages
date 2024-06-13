@@ -5,12 +5,12 @@ $packages = array(
         'courseID' => 1,
         'packageTitle' => 'Basic - Traffic Violator School Online',
         'packageDescription' => '<ul>
-            <li></i>Required Traffic School Course&nbsp;100% Online</li>
-            <li></i>Start Now, Finish Anytime</li>
-            <li></i>Certificate Processing: FREE 2-Day e-filing to Court &amp; DMV Upon Completion&nbsp;</li>
-            <li></i>Instant Grading</li>
-            <li></i>Proof of Purchase</li>
-            <li></i>Free Completion Certificate</li>
+            <li>Required Traffic School Course&nbsp;100% Online</li>
+            <li>Start Now, Finish Anytime</li>
+            <li>Certificate Processing: FREE 2-Day e-filing to Court &amp; DMV Upon Completion&nbsp;</li>
+            <li>Instant Grading</li>
+            <li>Proof of Purchase</li>
+            <li>Free Completion Certificate</li>
             </ul>
             <small>This Package&nbsp;does not&nbsp;provide the added benefit of Expedited Processing, Insurance/Employer Certificate, Unlimited Course Attempts, or DMV &amp; Court Confirmation Notification Numbers.</small>',
         'packageDisclaimer' => '',
@@ -33,7 +33,7 @@ $packages = array(
             <li>Bonus: Guaranteed To Pass</li>
             <li>Bonus: Insurance/Employer Certificate</li>
             <li>Certificate Processing:&nbsp;FREE 2 Day e-filing to Court &amp; DMV Upon Completion</li>
-            <li></span>Instant Grading</li>
+            <li>Instant Grading</li>
             <li>Proof of Purchase</li>
             <li>Free Completion Certificate</li>
             </ul>
@@ -286,7 +286,7 @@ $packages = array(
         'packageDescription' => '<ul>
             <li>Required Traffic School Course 100% Online</li>
             <li>Start Now, Finish Anytime</li>
-            <li><strong><strong><span style="font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 16px;">√¢≈ì‚Äú Plus</span></strong>: NEXT DAY Certificate Processing with e-Filing to DMV &amp; Court upon completion</strong></li>
+            <li><strong><strong>Plus</strong>: NEXT DAY Certificate Processing with e-Filing to DMV &amp; Court upon completion</strong></li>
             <li><strong>Plus: DMV Processed Confirmation Number</strong></li>
             <li><strong>Plus: Guaranteed To Pass</strong></li>
             <li>Instant Grading</li>
