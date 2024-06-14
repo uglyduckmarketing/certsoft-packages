@@ -1,3 +1,9 @@
+<?php if( have_rows('school_information', 'options') ) : while( have_rows('school_information', 'options') ): the_row();
+
+  $login_link = get_sub_field('login_link');
+
+endwhile; endif; ?>
+
 <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 
 <header class="border-b border-gray-200 bg-white">
@@ -9,7 +15,13 @@
       </div>
       <?php endwhile; endif; ?>
       <div class="font-semibold text-sm text-gray-700 hidden md:block"><?php echo get_field('school_name'); ?></div>
-      <div class="font-semibold text-xs md:text-sm text-gray-700">Returning Customer? <a href="<?php echo get_field('school_login_link'); ?>" class="text-blue-600 text-primary">Login</a></div>
+      <div class="font-semibold text-xs md:text-sm text-gray-700">
+        <?php if(!empty($login_link)) : ?>
+          Returning Customer? <a href="<?php echo $login_link; ?>" class="text-blue-600 text-primary">Login</a>
+        <?php else : ?>
+          Returning Customer? <a href="<?php echo get_field('school_login_link'); ?>" class="text-blue-600 text-primary">Login</a>
+        <?php endif; ?>
+      </div>
     </div>
   </div>
 </header>

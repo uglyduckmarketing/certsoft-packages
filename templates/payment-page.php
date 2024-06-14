@@ -1,8 +1,23 @@
 <?php
 get_header();
 
+if( have_rows('school_information', 'options') ) : while( have_rows('school_information', 'options') ): the_row();
+
+  $school_name = get_sub_field('school_name');
+  $school_logo = get_sub_field('school_logo');
+  $school_primary_color = get_sub_field('school_primary_color');
+  $school_login_link = get_sub_field('school_login_link');
+  $school_type = get_sub_field('school_type');
+
+endwhile; endif;
+
 include plugin_dir_path(__FILE__) . 'headers/header-01.php';
-require_once plugin_dir_path(__FILE__) . 'packages.php';
+
+if($school_type == 'Boating School') {
+  include plugin_dir_path(__FILE__) . 'boating-packages.php';
+} else {
+  include plugin_dir_path(__FILE__) . 'packages.php';
+}
 
 // Included from packages.php
 $package_details = $packages;
@@ -81,6 +96,9 @@ global $current_user;
               <h3 class="text-xl font-semibold leading-6 text-gray-900" id="modal-title">Terms &amp; Conditions</h3>
               <div class="mt-2">
                 <div class="text-sm text-gray-500 h-60 overflow-scroll py-4">
+                  <?php if(get_field('terms', 'options')) : ?>
+                    <?php echo get_field('terms', 'options'); ?>
+                  <?php else : ?>
                   <?php echo do_shortcode('[company_name]'); ?> Terms of Service
                   <br /><br />
                   I certify under penalty of perjury that I alone will study the Go To <?php echo do_shortcode('[company_name]'); ?> course materials, take the quizzes and final exam without any outside assistance. I understand that if it is determined that I have not completed Go To <?php echo do_shortcode('[company_name]'); ?> without outside assistance, make false statements or present falsified documents to the court or Go To <?php echo do_shortcode('[company_name]'); ?>, this may be a felony and the completion certificate will not be accepted and I will receive no refund. I have reviewed the list of licensed traffic schools and understand that Go To <?php echo do_shortcode('[company_name]'); ?> is a DMV Licensed traffic school for the state of California in the English Language Only. I certify that I have a valid drivers license and am eligible for traffic school.
@@ -126,7 +144,8 @@ global $current_user;
                   <br /><br />
                   BY CLICKING ON "Submit Payment " BELOW, I AM CONFIRMING THAT I HAVE READ AND AGREE TO THE FOLLOWING TERMS AND CONDITIONS OF THE Go To <?php echo do_shortcode('[company_name]'); ?> WEBSITE AND UNDERSTAND THAT THE FOLLOWING TERMS AND CONDITIONS WILL BIND ME AND Go To <?php echo do_shortcode('[company_name]'); ?> TO A VALID AND ENFORCEABLE CONTRACT. I ALSO AGREE THAT UNDER PENALTY OF PERJURY YOU ARE THE INDIVIDUAL TAKING THIS COURSE AND HAVE A VALID DRIVERS LICENSE.
                   *These terms and conditions are subject to change without notice.
-                  </div>
+                  <?php endif; ?>
+                </div>
               </div>
             </div>
           </div>
@@ -184,11 +203,13 @@ global $current_user;
             Create Account
           </button>
           <button class="progress-button" id="progress-button-02">
-            Payment Details
+            Secure Payment
           </button>
+          <?php if($school_type !== 'Boating School') : ?>
           <button class="progress-button" id="progress-button-03">
             Ticket Information
           </button>
+          <?php endif; ?>
           <button class="progress-button" id="progress-button-04">
             Start Course
           </button>
@@ -281,9 +302,12 @@ global $current_user;
             </div>
 
             <div class="sm:col-span-2">
-              <label for="password">Password <span class="text-red-500">*</span></label>
-              <div class="mt-1">
+              <label for="password">Create A Password <span class="text-red-500">*</span></label>
+              <div class="mt-1 relative">
                 <input type="password" name="password" id="password" required>
+                <span class="view-password absolute right-4 top-4 -mt-0.5 text-gray-500 hover:text-gray-900 cursor-pointer transition-all duration-300">
+                  <i class="fa-solid fa-eye"></i>
+                </span>
               </div>
             </div>
 
@@ -527,13 +551,16 @@ global $current_user;
             </div>
           </dl>
         </div>
-		<div class="block mt-12 text-gray-700">
-			<a href="<?php bloginfo('url'); ?>/get-started/" class="text-sm gap-2 flex items-center edit-package">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-				  <path fill-rule="evenodd" d="M12.5 9.75A2.75 2.75 0 0 0 9.75 7H4.56l2.22 2.22a.75.75 0 1 1-1.06 1.06l-3.5-3.5a.75.75 0 0 1 0-1.06l3.5-3.5a.75.75 0 0 1 1.06 1.06L4.56 5.5h5.19a4.25 4.25 0 0 1 0 8.5h-1a.75.75 0 0 1 0-1.5h1a2.75 2.75 0 0 0 2.75-2.75Z" clip-rule="evenodd" />
-				</svg>
-				Edit Package</a>
+        <?php if($school_type !== 'Boating School') : ?>
+		    <div class="block mt-12 text-gray-700">
+			    <a href="<?php bloginfo('url'); ?>/get-started/" class="text-sm gap-2 flex items-center edit-package">
+				    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+				      <path fill-rule="evenodd" d="M12.5 9.75A2.75 2.75 0 0 0 9.75 7H4.56l2.22 2.22a.75.75 0 1 1-1.06 1.06l-3.5-3.5a.75.75 0 0 1 0-1.06l3.5-3.5a.75.75 0 0 1 1.06 1.06L4.56 5.5h5.19a4.25 4.25 0 0 1 0 8.5h-1a.75.75 0 0 1 0-1.5h1a2.75 2.75 0 0 0 2.75-2.75Z" clip-rule="evenodd" />
+				    </svg>
+				  Edit Package
+        </a>
 		  </div>
+      <?php endif; ?>
       </div>
   </div>
 </div>
@@ -626,7 +653,29 @@ global $current_user;
 
 <?php get_footer(); ?>
 
+<?php if($school_type === 'Boating School') : ?>
 <script>
+  document.getElementById('progress-button-02').addEventListener('click', function() {
+    document.getElementById('progress-bar').style.width = '50%';
+  });
+</script>
+<?php endif; ?>
+
+<script>
+
+// Change Password Field to Text Field
+document.querySelector('.view-password').addEventListener('click', function() {
+  const password = document.getElementById('password');
+  const icon = document.querySelector('.view-password svg');
+  if(password.type === 'password') {
+    password.type = 'text';
+    icon.classList.toggle('fa-eye-slash');
+  } else {
+    password.type = 'password';
+    icon.classList.toggle('fa-eye');
+  }
+});
+
 jQuery(document).ready(function($){
 	
 	$('.package-description-toggle').click(function(e) {
