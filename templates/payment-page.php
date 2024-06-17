@@ -99,7 +99,7 @@ global $current_user;
                   <?php if(get_field('terms', 'options')) : ?>
                     <?php echo get_field('terms', 'options'); ?>
                   <?php else : ?>
-                  <?php echo do_shortcode('[company_name]'); ?> Terms of Service
+                  <strong class="text-center"><?php echo do_shortcode('[company_name]'); ?> Terms of Service</strong>
                   <br /><br />
                   Please read all terms and conditions carefully. Your use of this Site or our services is conditioned upon your acceptance of these terms. If you do not agree to the terms, do not use this Site or the services entered.
                   <br /><br />
