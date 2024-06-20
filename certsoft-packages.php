@@ -339,6 +339,7 @@ function checkout_process(){
 						  'merchant_defined_field_5' => $drivers_license_state,
 						  'merchant_defined_field_6' => $package_id,
 						  'merchant_defined_field_7' => $school_id,
+							'merchant_defined_field_9' => 'enrollment',
 						  'order_description' => $package_title . ' Online Course',
 						);
 									
