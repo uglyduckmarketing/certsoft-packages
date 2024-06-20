@@ -185,8 +185,9 @@ global $current_user;
     <form id="payment-form">
       
 	<?php if (!empty($_GET['id']) && isset($_GET['id'])) { ?>
-	    <input type="hidden" value="<?php echo $packageID; ?>" name="package_id" class="package_id" id="package_id">
+	  <input type="hidden" value="<?php echo $packageID; ?>" name="package_id" class="package_id" id="package_id">
 		<input type="hidden" value="<?php echo $packagePrice; ?>" name="package_amount" class="package_amount" id="package_amount">
+    <input type="hidden" value="<?php echo $packageTitle; ?>" name="package_title" class="package_title" id="package_title">
 	<?php } else {
 		     die('Package ID missing');
 	      } 
@@ -803,6 +804,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			var school_id = $("#school_id").val();
 			var package_amount = $("#package_amount").val();
 			var certsoft_auth_token = $("#certsoft_auth_token").val();
+      var package_title = $("#package_title").val();
 			
 			$("#payButton").html("Processing...");
 			
@@ -814,6 +816,7 @@ document.addEventListener('DOMContentLoaded', function () {
 							school_id: school_id,
 							certsoft_auth_token: certsoft_auth_token,
 							package_amount: package_amount,
+              package_title: package_title,
 							nmi_payment_token:  response.token,
 							action: 'checkout_process',
 						},

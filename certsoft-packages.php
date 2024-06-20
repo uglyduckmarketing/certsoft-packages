@@ -259,8 +259,8 @@ function register_user(){
 				wp_set_current_user( $existing_user_id );
 				wp_set_auth_cookie( $existing_user_id );
 		
-			    update_user_meta( $existing_user_id, 'certsoft_user_firstname', $firstname);
-			    update_user_meta( $existing_user_id, 'certsoft_user_lastname', $lastname);
+			  update_user_meta( $existing_user_id, 'certsoft_user_firstname', $firstname);
+			  update_user_meta( $existing_user_id, 'certsoft_user_lastname', $lastname);
 				update_user_meta( $existing_user_id, 'certsoft_user_dob', $dob);
 				update_user_meta( $existing_user_id, 'certsoft_user_license_number', $license_number);
 				update_user_meta( $existing_user_id, 'certsoft_user_license_state', $license_state);
@@ -283,13 +283,13 @@ function checkout_process(){
 		global $wpdb;
 		$tablename = $wpdb->prefix."certsoft_nmi_payments";
 		
-        $current_user_id = get_current_user_id();
+    $current_user_id = get_current_user_id();
 		
-		if( !empty($current_user_id) && !empty($_POST['package_amount']) && !empty($_POST['nmi_payment_token']) ){
+		if( !empty($current_user_id) && !empty($_POST['package_amount']) && !empty($_POST['nmi_payment_token']) ) {
 			
 			//Get NMI Payment
 			$current_user = wp_get_current_user();
-						
+						      
 			$user_firstname = $current_user->certsoft_user_firstname ? $current_user->certsoft_user_firstname : null;
 			$user_lastname = $current_user->certsoft_user_lastname ? $current_user->certsoft_user_lastname : null;
 			//$display_name = $current_user->display_name ? $current_user->display_name : null;
@@ -297,11 +297,13 @@ function checkout_process(){
 			$user_pass = $current_user->user_pass ? $current_user->user_pass : null;
 			
 			$package_amount = $_POST['package_amount']; 	 	 	
-			$nmi_payment_token = $_POST['nmi_payment_token']; 	 	 	
+			$nmi_payment_token = $_POST['nmi_payment_token'];
+			$package_title = $_POST['package_title'];
 			
 			$package_id = isset($_POST['package_id']) ? $_POST['package_id'] : null; 	 	 	
 			$school_id = isset($_POST['school_id']) ? $_POST['school_id'] : null;
 			$certsoft_auth_token = isset($_POST['certsoft_auth_token']) ? $_POST['certsoft_auth_token'] : null;
+
 			
 			$drivers_license_dob = $current_user->certsoft_user_dob ? $current_user->certsoft_user_dob : null;
 			$drivers_license_number = $current_user->certsoft_user_license_number ? $current_user->certsoft_user_license_number : null;
@@ -337,7 +339,7 @@ function checkout_process(){
 						  'merchant_defined_field_5' => $drivers_license_state,
 						  'merchant_defined_field_6' => $package_id,
 						  'merchant_defined_field_7' => $school_id,
-						  'order_description' => $package_title
+						  'order_description' => $package_title . ' Online Course',
 						);
 									
 			$values = [];
