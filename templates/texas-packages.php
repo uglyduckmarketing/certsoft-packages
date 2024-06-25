@@ -25,7 +25,7 @@ $packages = array(
      2 => array(
         'packageID' => 2,
         'courseID' => 2,
-        'packageTitle' => 'All Video Online Cours + Driving Record',
+        'packageTitle' => 'All Video Online Course + Driving Record',
         'packageDescription' => 'Traffic Ticket Dismissal with Driving Record Printout  <ul style="margin-top: 2rem;">
             <li>Video Course Upgrade (FREE)</li>
             <li>Only 5 Chapters</li>
