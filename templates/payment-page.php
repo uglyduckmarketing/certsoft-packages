@@ -8,6 +8,7 @@ if( have_rows('school_information', 'options') ) : while( have_rows('school_info
   $school_primary_color = get_sub_field('school_primary_color');
   $school_login_link = get_sub_field('school_login_link');
   $school_type = get_sub_field('school_type');
+  $school_state = get_sub_field('school_state');
 
 endwhile; endif;
 
@@ -16,7 +17,11 @@ include plugin_dir_path(__FILE__) . 'headers/header-01.php';
 if($school_type == 'Boating School') {
   include plugin_dir_path(__FILE__) . 'boating-packages.php';
 } else {
-  include plugin_dir_path(__FILE__) . 'packages.php';
+  if($school_state == 'Texas') {
+    include plugin_dir_path(__FILE__) . 'texas-packages.php';
+  } else {
+    include plugin_dir_path(__FILE__) . 'packages.php';
+  }
 }
 
 // Included from packages.php
@@ -338,7 +343,7 @@ global $current_user;
             <?php if( have_rows('payment_options', 'options') ) : while( have_rows('payment_options', 'options') ): the_row(); ?>
             <?php if(!empty(get_sub_field('ask_for_drivers_license'))) : ?>
             <div class="sm:col-span-2">
-              <label for="license">License Number</label>
+              <label for="license">Driver License Number</label>
               <div class="mt-1">
                 <input type="text" id="license-number" name="license-number" value="<?= isset($drivers_license_number) ? $drivers_license_number : '' ?>">
               </div>
