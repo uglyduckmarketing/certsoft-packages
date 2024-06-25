@@ -355,7 +355,7 @@ global $current_user;
                 <option <?php if($drivers_license_state == 'AK') echo "selected"; ?> value="AK">Alaska</option>
                 <option <?php if($drivers_license_state == 'AZ') echo "selected"; ?> value="AZ">Arizona</option>
                 <option <?php if($drivers_license_state == 'AR') echo "selected"; ?> value="AR">Arkansas</option>
-                <option <?php if($drivers_license_state == 'CA') echo "selected"; ?> value="CA" selected>California</option>
+                <option <?php if($drivers_license_state == 'CA') echo "selected"; ?> value="CA" <?php if($school_state === 'california') : ?>selected<?php endif; ?>>California</option>
                 <option <?php if($drivers_license_state == 'CO') echo "selected"; ?> value="CO">Colorado</option>
                 <option <?php if($drivers_license_state == 'CT') echo "selected"; ?> value="CT">Connecticut</option>
                 <option <?php if($drivers_license_state == 'DE') echo "selected"; ?> value="DE">Delaware</option>
@@ -394,7 +394,7 @@ global $current_user;
                 <option <?php if($drivers_license_state == 'SC') echo "selected"; ?> value="SC">South Carolina</option>
                 <option <?php if($drivers_license_state == 'SD') echo "selected"; ?> value="SD">South Dakota</option>
                 <option <?php if($drivers_license_state == 'TN') echo "selected"; ?> value="TN">Tennessee</option>
-                <option <?php if($drivers_license_state == 'TX') echo "selected"; ?> value="TX">Texas</option>
+                <option <?php if($drivers_license_state == 'TX') echo "selected"; ?> value="TX" <?php if($school_state === 'texas') : ?>selected<?php endif; ?>>Texas</option>
                 <option <?php if($drivers_license_state == 'UT') echo "selected"; ?> value="UT">Utah</option>
                 <option <?php if($drivers_license_state == 'VT') echo "selected"; ?> value="VT">Vermont</option>
                 <option <?php if($drivers_license_state == 'VA') echo "selected"; ?> value="VA">Virginia</option>
