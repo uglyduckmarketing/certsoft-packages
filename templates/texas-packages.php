@@ -35,7 +35,7 @@ $packages = array(
             <li>Premium Support</li>
             </ul>',
         'packageDisclaimer' => '',
-        'packageSlug' => 'All Video Online Cours + Driving Record',
+        'packageSlug' => 'All Video Online Course + Driving Record',
         'packagePrice' => '44.95',
         'packageClass' => '',
         'packageImage' => '',
