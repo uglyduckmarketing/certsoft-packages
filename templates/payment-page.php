@@ -16,12 +16,10 @@ include plugin_dir_path(__FILE__) . 'headers/header-01.php';
 
 if($school_type == 'Boating School') {
   include plugin_dir_path(__FILE__) . 'boating-packages.php';
+} elseif($school_state == 'texas') {
+  include plugin_dir_path(__FILE__) . 'texas-packages.php';
 } else {
-  if($school_state == 'Texas') {
-    include plugin_dir_path(__FILE__) . 'texas-packages.php';
-  } else {
-    include plugin_dir_path(__FILE__) . 'packages.php';
-  }
+  include plugin_dir_path(__FILE__) . 'packages.php';
 }
 
 // Included from packages.php
