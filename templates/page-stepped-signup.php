@@ -35,7 +35,7 @@
       </div>
       <div>
         <h2 class="mb-1.5 font-semibold text-lg md:text-xl text-gray-900 leading-6 mt-2 md:mt-0 tracking-tight">This Course is California Traffic School for California Traffic Tickets.</h2>
-        <p class="text-gray-600 text-sm md:text-base mb-2 md:mb-0">Licensed by the DMV #<?php echo get_field('license_number', 'options'); ?>. We've helped nearly 1 million drivers mask their traffic ticket. <span class="font-semibold text-gray-900">Course Info:</span></p>
+        <p class="text-gray-600 text-sm md:text-base mb-2 md:mb-0">Licensed by the DMV #<?php echo get_field('license_number', 'options'); ?>. We help California drivers mask their traffic tickets. <span class="font-semibold text-gray-900">Course Info:</span></p>
           <ul class="mt-3 course-info grid md:grid-cols-2 gap-2 font-medium text-gray-700 text-sm mb-1">
           <li class="flex gap-2 items-center">
               <span>
