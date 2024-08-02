@@ -3,7 +3,7 @@
 Plugin Name: Certsoft Packages
 Description: Add the Certsoft signup and payments.
 Author: Matt Lewis
-Version: 1.2.1
+Version: 1.2.3
 */
 
 function certsoft_plugin_activation()
