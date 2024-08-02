@@ -750,8 +750,8 @@ jQuery(document).ready(function($){
 
 		$form.validate();	
 		if($form.valid()) {
-      var firstName = $("#first-name").val().replace(/'/g, 'A');
-      var firstName = $("#last-name").val().replace(/'/g, 'A');
+      var firstname = $("#first-name").val().replace(/'/g, 'A');
+      var lastname = $("#last-name").val().replace(/'/g, 'A');
 			var email = $("#email").val();
 			var password = $("#password").val();
 			var dob = $("#dob").val();

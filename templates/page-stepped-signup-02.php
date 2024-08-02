@@ -29,7 +29,7 @@
       <div class="grid gap-2 mb-2 mt-4">
         <div class="text-base font-semibold text-gray-700 leading-5 tracking-tight">This Course is California Traffic School for CA Traffic Tickets.</div>
       </div>
-      <div class="text-sm text-gray-500">Licensed by the DMV #<?php echo $license_number; ?>. We've helped over 200,000 drivers mask their traffic ticket.</div>
+      <div class="text-sm text-gray-500">Licensed by the DMV #<?php echo $license_number; ?>. We help California drivers mask their traffic ticket.</div>
     </div>
 
       <div class="flow-root">
